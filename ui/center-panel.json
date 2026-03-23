@@ -8,105 +8,190 @@
         "sourceTag": "div",
         "children": [
           {
-            "sourceTag": "text",
-            "type": "custom",
-            "children": [
-              "TradeSphere AI"
-            ],
-            "properties": {
-              "class": "eyebrow"
-            },
-            "dataUid": "uid-3"
-          },
-          {
-            "sourceTag": "text",
-            "type": "custom",
-            "children": [
-              "Apple Inc."
-            ],
-            "properties": {
-              "id": "stock-title",
-              "class": "header"
-            },
-            "dataUid": "uid-4"
-          },
-          {
             "type": "container",
             "sourceTag": "div",
             "children": [
               {
-                "sourceTag": "text",
-                "type": "custom",
+                "type": "container",
+                "sourceTag": "div",
                 "children": [
-                  "$189.45"
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "TradeSphere AI"
+                    ],
+                    "properties": {
+                      "class": "eyebrow"
+                    },
+                    "dataUid": "uid-5"
+                  },
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "Apple Inc."
+                    ],
+                    "properties": {
+                      "id": "stock-title",
+                      "class": "header"
+                    },
+                    "dataUid": "uid-6"
+                  }
                 ],
                 "properties": {
-                  "id": "price",
-                  "class": "price"
+                  "class": "title-block"
                 },
-                "dataUid": "uid-6"
+                "dataUid": "uid-4"
               },
               {
                 "sourceTag": "text",
                 "type": "custom",
                 "children": [
-                  "+1.25%"
+                  "Bullish Session"
                 ],
                 "properties": {
-                  "id": "change",
-                  "class": "change"
+                  "id": "chart-signal",
+                  "class": "signal-badge"
                 },
                 "dataUid": "uid-7"
               }
             ],
             "properties": {
-              "class": "hero-row"
+              "class": "top-row"
             },
-            "dataUid": "uid-5"
+            "dataUid": "uid-3"
           },
           {
             "type": "container",
             "sourceTag": "div",
             "children": [
               {
-                "sourceTag": "text",
-                "type": "custom",
+                "type": "container",
+                "sourceTag": "div",
                 "children": [
-                  "Bullish Intraday"
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "$189.45"
+                        ],
+                        "properties": {
+                          "id": "price",
+                          "class": "price"
+                        },
+                        "dataUid": "uid-11"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "+1.25%"
+                        ],
+                        "properties": {
+                          "id": "change",
+                          "class": "change"
+                        },
+                        "dataUid": "uid-12"
+                      }
+                    ],
+                    "properties": {
+                      "class": "hero-row"
+                    },
+                    "dataUid": "uid-10"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Bullish Intraday"
+                        ],
+                        "properties": {
+                          "id": "trend-label",
+                          "class": "pill"
+                        },
+                        "dataUid": "uid-14"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Range 186.90 - 191.10"
+                        ],
+                        "properties": {
+                          "id": "range",
+                          "class": "pill"
+                        },
+                        "dataUid": "uid-15"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Vol 68.4M"
+                        ],
+                        "properties": {
+                          "id": "volume",
+                          "class": "pill"
+                        },
+                        "dataUid": "uid-16"
+                      }
+                    ],
+                    "properties": {
+                      "class": "pill-row"
+                    },
+                    "dataUid": "uid-13"
+                  }
                 ],
                 "properties": {
-                  "id": "trend-label",
-                  "class": "pill"
+                  "class": "hero-left"
                 },
                 "dataUid": "uid-9"
               },
               {
-                "sourceTag": "text",
-                "type": "custom",
+                "type": "container",
+                "sourceTag": "div",
                 "children": [
-                  "Range 186.90 - 191.10"
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "Trade Bias"
+                    ],
+                    "properties": {
+                      "class": "hero-side-label"
+                    },
+                    "dataUid": "uid-18"
+                  },
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "Momentum Breakout"
+                    ],
+                    "properties": {
+                      "id": "signal",
+                      "class": "hero-side-value"
+                    },
+                    "dataUid": "uid-19"
+                  }
                 ],
                 "properties": {
-                  "id": "range",
-                  "class": "pill"
+                  "class": "hero-side"
                 },
-                "dataUid": "uid-10"
-              },
-              {
-                "sourceTag": "text",
-                "type": "custom",
-                "children": [
-                  "Vol 68.4M"
-                ],
-                "properties": {
-                  "id": "volume",
-                  "class": "pill"
-                },
-                "dataUid": "uid-11"
+                "dataUid": "uid-17"
               }
             ],
             "properties": {
-              "class": "pill-row"
+              "class": "hero-card"
             },
             "dataUid": "uid-8"
           },
@@ -127,7 +212,7 @@
                     "properties": {
                       "class": "chart-header"
                     },
-                    "dataUid": "uid-14"
+                    "dataUid": "uid-22"
                   },
                   {
                     "sourceTag": "text",
@@ -139,13 +224,13 @@
                       "id": "chart-high",
                       "class": "chart-meta"
                     },
-                    "dataUid": "uid-15"
+                    "dataUid": "uid-23"
                   }
                 ],
                 "properties": {
                   "class": "chart-title-row"
                 },
-                "dataUid": "uid-13"
+                "dataUid": "uid-21"
               },
               {
                 "type": "container",
@@ -165,7 +250,7 @@
                           "id": "axis-top",
                           "class": "axis-price"
                         },
-                        "dataUid": "uid-18"
+                        "dataUid": "uid-26"
                       },
                       {
                         "sourceTag": "text",
@@ -177,7 +262,7 @@
                           "id": "axis-mid",
                           "class": "axis-price"
                         },
-                        "dataUid": "uid-19"
+                        "dataUid": "uid-27"
                       },
                       {
                         "sourceTag": "text",
@@ -189,13 +274,13 @@
                           "id": "axis-low",
                           "class": "axis-price"
                         },
-                        "dataUid": "uid-20"
+                        "dataUid": "uid-28"
                       }
                     ],
                     "properties": {
                       "class": "price-axis"
                     },
-                    "dataUid": "uid-17"
+                    "dataUid": "uid-25"
                   },
                   {
                     "type": "container",
@@ -208,7 +293,7 @@
                         "properties": {
                           "class": "grid-line grid-top"
                         },
-                        "dataUid": "uid-22"
+                        "dataUid": "uid-30"
                       },
                       {
                         "type": "container",
@@ -217,7 +302,7 @@
                         "properties": {
                           "class": "grid-line grid-mid"
                         },
-                        "dataUid": "uid-23"
+                        "dataUid": "uid-31"
                       },
                       {
                         "type": "container",
@@ -226,7 +311,7 @@
                         "properties": {
                           "class": "grid-line grid-low"
                         },
-                        "dataUid": "uid-24"
+                        "dataUid": "uid-32"
                       },
                       {
                         "type": "container",
@@ -244,7 +329,7 @@
                                   "id": "candle-top-0",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-27"
+                                "dataUid": "uid-35"
                               },
                               {
                                 "type": "container",
@@ -254,7 +339,7 @@
                                   "id": "body-0",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-28"
+                                "dataUid": "uid-36"
                               },
                               {
                                 "type": "container",
@@ -264,7 +349,7 @@
                                   "id": "candle-bottom-0",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-29"
+                                "dataUid": "uid-37"
                               },
                               {
                                 "sourceTag": "text",
@@ -276,13 +361,13 @@
                                   "id": "label-0",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-30"
+                                "dataUid": "uid-38"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-26"
+                            "dataUid": "uid-34"
                           },
                           {
                             "type": "container",
@@ -296,7 +381,7 @@
                                   "id": "candle-top-1",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-32"
+                                "dataUid": "uid-40"
                               },
                               {
                                 "type": "container",
@@ -306,7 +391,7 @@
                                   "id": "body-1",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-33"
+                                "dataUid": "uid-41"
                               },
                               {
                                 "type": "container",
@@ -316,7 +401,7 @@
                                   "id": "candle-bottom-1",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-34"
+                                "dataUid": "uid-42"
                               },
                               {
                                 "sourceTag": "text",
@@ -328,13 +413,13 @@
                                   "id": "label-1",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-35"
+                                "dataUid": "uid-43"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-31"
+                            "dataUid": "uid-39"
                           },
                           {
                             "type": "container",
@@ -348,7 +433,7 @@
                                   "id": "candle-top-2",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-37"
+                                "dataUid": "uid-45"
                               },
                               {
                                 "type": "container",
@@ -358,7 +443,7 @@
                                   "id": "body-2",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-38"
+                                "dataUid": "uid-46"
                               },
                               {
                                 "type": "container",
@@ -368,7 +453,7 @@
                                   "id": "candle-bottom-2",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-39"
+                                "dataUid": "uid-47"
                               },
                               {
                                 "sourceTag": "text",
@@ -380,13 +465,13 @@
                                   "id": "label-2",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-40"
+                                "dataUid": "uid-48"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-36"
+                            "dataUid": "uid-44"
                           },
                           {
                             "type": "container",
@@ -400,7 +485,7 @@
                                   "id": "candle-top-3",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-42"
+                                "dataUid": "uid-50"
                               },
                               {
                                 "type": "container",
@@ -410,7 +495,7 @@
                                   "id": "body-3",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-43"
+                                "dataUid": "uid-51"
                               },
                               {
                                 "type": "container",
@@ -420,7 +505,7 @@
                                   "id": "candle-bottom-3",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-44"
+                                "dataUid": "uid-52"
                               },
                               {
                                 "sourceTag": "text",
@@ -432,13 +517,13 @@
                                   "id": "label-3",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-45"
+                                "dataUid": "uid-53"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-41"
+                            "dataUid": "uid-49"
                           },
                           {
                             "type": "container",
@@ -452,7 +537,7 @@
                                   "id": "candle-top-4",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-47"
+                                "dataUid": "uid-55"
                               },
                               {
                                 "type": "container",
@@ -462,7 +547,7 @@
                                   "id": "body-4",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-48"
+                                "dataUid": "uid-56"
                               },
                               {
                                 "type": "container",
@@ -472,7 +557,7 @@
                                   "id": "candle-bottom-4",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-49"
+                                "dataUid": "uid-57"
                               },
                               {
                                 "sourceTag": "text",
@@ -484,13 +569,13 @@
                                   "id": "label-4",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-50"
+                                "dataUid": "uid-58"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-46"
+                            "dataUid": "uid-54"
                           },
                           {
                             "type": "container",
@@ -504,7 +589,7 @@
                                   "id": "candle-top-5",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-52"
+                                "dataUid": "uid-60"
                               },
                               {
                                 "type": "container",
@@ -514,7 +599,7 @@
                                   "id": "body-5",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-53"
+                                "dataUid": "uid-61"
                               },
                               {
                                 "type": "container",
@@ -524,7 +609,7 @@
                                   "id": "candle-bottom-5",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-54"
+                                "dataUid": "uid-62"
                               },
                               {
                                 "sourceTag": "text",
@@ -536,13 +621,13 @@
                                   "id": "label-5",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-55"
+                                "dataUid": "uid-63"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-51"
+                            "dataUid": "uid-59"
                           },
                           {
                             "type": "container",
@@ -556,7 +641,7 @@
                                   "id": "candle-top-6",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-57"
+                                "dataUid": "uid-65"
                               },
                               {
                                 "type": "container",
@@ -566,7 +651,7 @@
                                   "id": "body-6",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-58"
+                                "dataUid": "uid-66"
                               },
                               {
                                 "type": "container",
@@ -576,7 +661,7 @@
                                   "id": "candle-bottom-6",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-59"
+                                "dataUid": "uid-67"
                               },
                               {
                                 "sourceTag": "text",
@@ -588,13 +673,13 @@
                                   "id": "label-6",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-60"
+                                "dataUid": "uid-68"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-56"
+                            "dataUid": "uid-64"
                           },
                           {
                             "type": "container",
@@ -608,7 +693,7 @@
                                   "id": "candle-top-7",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-62"
+                                "dataUid": "uid-70"
                               },
                               {
                                 "type": "container",
@@ -618,7 +703,7 @@
                                   "id": "body-7",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-63"
+                                "dataUid": "uid-71"
                               },
                               {
                                 "type": "container",
@@ -628,7 +713,7 @@
                                   "id": "candle-bottom-7",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-64"
+                                "dataUid": "uid-72"
                               },
                               {
                                 "sourceTag": "text",
@@ -640,13 +725,13 @@
                                   "id": "label-7",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-65"
+                                "dataUid": "uid-73"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-61"
+                            "dataUid": "uid-69"
                           },
                           {
                             "type": "container",
@@ -660,7 +745,7 @@
                                   "id": "candle-top-8",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-67"
+                                "dataUid": "uid-75"
                               },
                               {
                                 "type": "container",
@@ -670,7 +755,7 @@
                                   "id": "body-8",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-68"
+                                "dataUid": "uid-76"
                               },
                               {
                                 "type": "container",
@@ -680,7 +765,7 @@
                                   "id": "candle-bottom-8",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-69"
+                                "dataUid": "uid-77"
                               },
                               {
                                 "sourceTag": "text",
@@ -692,13 +777,13 @@
                                   "id": "label-8",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-70"
+                                "dataUid": "uid-78"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-66"
+                            "dataUid": "uid-74"
                           },
                           {
                             "type": "container",
@@ -712,7 +797,7 @@
                                   "id": "candle-top-9",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-72"
+                                "dataUid": "uid-80"
                               },
                               {
                                 "type": "container",
@@ -722,7 +807,7 @@
                                   "id": "body-9",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-73"
+                                "dataUid": "uid-81"
                               },
                               {
                                 "type": "container",
@@ -732,7 +817,7 @@
                                   "id": "candle-bottom-9",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-74"
+                                "dataUid": "uid-82"
                               },
                               {
                                 "sourceTag": "text",
@@ -744,13 +829,13 @@
                                   "id": "label-9",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-75"
+                                "dataUid": "uid-83"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-71"
+                            "dataUid": "uid-79"
                           },
                           {
                             "type": "container",
@@ -764,7 +849,7 @@
                                   "id": "candle-top-10",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-77"
+                                "dataUid": "uid-85"
                               },
                               {
                                 "type": "container",
@@ -774,7 +859,7 @@
                                   "id": "body-10",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-78"
+                                "dataUid": "uid-86"
                               },
                               {
                                 "type": "container",
@@ -784,7 +869,7 @@
                                   "id": "candle-bottom-10",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-79"
+                                "dataUid": "uid-87"
                               },
                               {
                                 "sourceTag": "text",
@@ -796,13 +881,13 @@
                                   "id": "label-10",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-80"
+                                "dataUid": "uid-88"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-76"
+                            "dataUid": "uid-84"
                           },
                           {
                             "type": "container",
@@ -816,7 +901,7 @@
                                   "id": "candle-top-11",
                                   "class": "bar-top-gap"
                                 },
-                                "dataUid": "uid-82"
+                                "dataUid": "uid-90"
                               },
                               {
                                 "type": "container",
@@ -826,7 +911,7 @@
                                   "id": "body-11",
                                   "class": "price-bar"
                                 },
-                                "dataUid": "uid-83"
+                                "dataUid": "uid-91"
                               },
                               {
                                 "type": "container",
@@ -836,7 +921,7 @@
                                   "id": "candle-bottom-11",
                                   "class": "bar-bottom-gap"
                                 },
-                                "dataUid": "uid-84"
+                                "dataUid": "uid-92"
                               },
                               {
                                 "sourceTag": "text",
@@ -848,31 +933,31 @@
                                   "id": "label-11",
                                   "class": "candle-label"
                                 },
-                                "dataUid": "uid-85"
+                                "dataUid": "uid-93"
                               }
                             ],
                             "properties": {
                               "class": "candle-column"
                             },
-                            "dataUid": "uid-81"
+                            "dataUid": "uid-89"
                           }
                         ],
                         "properties": {
                           "class": "candle-grid"
                         },
-                        "dataUid": "uid-25"
+                        "dataUid": "uid-33"
                       }
                     ],
                     "properties": {
                       "class": "plot-stage"
                     },
-                    "dataUid": "uid-21"
+                    "dataUid": "uid-29"
                   }
                 ],
                 "properties": {
                   "class": "chart-shell"
                 },
-                "dataUid": "uid-16"
+                "dataUid": "uid-24"
               },
               {
                 "type": "container",
@@ -888,43 +973,31 @@
                       "id": "chart-low",
                       "class": "chart-meta"
                     },
-                    "dataUid": "uid-87"
+                    "dataUid": "uid-95"
                   },
                   {
                     "sourceTag": "text",
                     "type": "custom",
                     "children": [
-                      "Bullish Close"
+                      "Momentum is building through the afternoon session."
                     ],
                     "properties": {
-                      "id": "chart-signal",
-                      "class": "label-strip"
+                      "id": "chart-footnote",
+                      "class": "chart-footnote"
                     },
-                    "dataUid": "uid-88"
+                    "dataUid": "uid-96"
                   }
                 ],
                 "properties": {
                   "class": "chart-title-row chart-meta-row"
                 },
-                "dataUid": "uid-86"
-              },
-              {
-                "sourceTag": "text",
-                "type": "custom",
-                "children": [
-                  "Momentum is building through the afternoon session."
-                ],
-                "properties": {
-                  "id": "chart-footnote",
-                  "class": "chart-footnote"
-                },
-                "dataUid": "uid-89"
+                "dataUid": "uid-94"
               }
             ],
             "properties": {
               "class": "chart-card"
             },
-            "dataUid": "uid-12"
+            "dataUid": "uid-20"
           },
           {
             "type": "container",
@@ -935,105 +1008,182 @@
                 "sourceTag": "div",
                 "children": [
                   {
-                    "sourceTag": "text",
-                    "type": "custom",
+                    "type": "container",
+                    "sourceTag": "div",
                     "children": [
-                      "Signal"
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Signal"
+                        ],
+                        "properties": {
+                          "class": "stat-label"
+                        },
+                        "dataUid": "uid-100"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Momentum Breakout"
+                        ],
+                        "properties": {
+                          "id": "center-signal",
+                          "class": "stat-value"
+                        },
+                        "dataUid": "uid-101"
+                      }
                     ],
                     "properties": {
-                      "class": "stat-label"
-                    },
-                    "dataUid": "uid-92"
-                  },
-                  {
-                    "sourceTag": "text",
-                    "type": "custom",
-                    "children": [
-                      "Momentum Breakout"
-                    ],
-                    "properties": {
-                      "id": "signal",
-                      "class": "stat-value"
-                    },
-                    "dataUid": "uid-93"
-                  }
-                ],
-                "properties": {
-                  "class": "stat-card"
-                },
-                "dataUid": "uid-91"
-              },
-              {
-                "type": "container",
-                "sourceTag": "div",
-                "children": [
-                  {
-                    "sourceTag": "text",
-                    "type": "custom",
-                    "children": [
-                      "Bias"
-                    ],
-                    "properties": {
-                      "class": "stat-label"
-                    },
-                    "dataUid": "uid-95"
-                  },
-                  {
-                    "sourceTag": "text",
-                    "type": "custom",
-                    "children": [
-                      "Accumulation"
-                    ],
-                    "properties": {
-                      "id": "bias",
-                      "class": "stat-value"
-                    },
-                    "dataUid": "uid-96"
-                  }
-                ],
-                "properties": {
-                  "class": "stat-card"
-                },
-                "dataUid": "uid-94"
-              },
-              {
-                "type": "container",
-                "sourceTag": "div",
-                "children": [
-                  {
-                    "sourceTag": "text",
-                    "type": "custom",
-                    "children": [
-                      "Risk"
-                    ],
-                    "properties": {
-                      "class": "stat-label"
-                    },
-                    "dataUid": "uid-98"
-                  },
-                  {
-                    "sourceTag": "text",
-                    "type": "custom",
-                    "children": [
-                      "Medium"
-                    ],
-                    "properties": {
-                      "id": "risk",
-                      "class": "stat-value"
+                      "class": "stat-card"
                     },
                     "dataUid": "uid-99"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Bias"
+                        ],
+                        "properties": {
+                          "class": "stat-label"
+                        },
+                        "dataUid": "uid-103"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Accumulation"
+                        ],
+                        "properties": {
+                          "id": "bias",
+                          "class": "stat-value"
+                        },
+                        "dataUid": "uid-104"
+                      }
+                    ],
+                    "properties": {
+                      "class": "stat-card"
+                    },
+                    "dataUid": "uid-102"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Risk"
+                        ],
+                        "properties": {
+                          "class": "stat-label"
+                        },
+                        "dataUid": "uid-106"
+                      },
+                      {
+                        "sourceTag": "text",
+                        "type": "custom",
+                        "children": [
+                          "Medium"
+                        ],
+                        "properties": {
+                          "id": "risk",
+                          "class": "stat-value"
+                        },
+                        "dataUid": "uid-107"
+                      }
+                    ],
+                    "properties": {
+                      "class": "stat-card"
+                    },
+                    "dataUid": "uid-105"
                   }
                 ],
                 "properties": {
-                  "class": "stat-card"
+                  "class": "stats-row"
                 },
-                "dataUid": "uid-97"
+                "dataUid": "uid-98"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "Quick Trade"
+                    ],
+                    "properties": {
+                      "class": "action-label"
+                    },
+                    "dataUid": "uid-109"
+                  },
+                  {
+                    "type": "container",
+                    "sourceTag": "div",
+                    "children": [
+                      {
+                        "sourceTag": "button",
+                        "type": "custom",
+                        "children": [
+                          "BUY"
+                        ],
+                        "properties": {
+                          "id": "buy-btn",
+                          "class": "trade-btn buy-btn"
+                        },
+                        "dataUid": "uid-111"
+                      },
+                      {
+                        "sourceTag": "button",
+                        "type": "custom",
+                        "children": [
+                          "SELL"
+                        ],
+                        "properties": {
+                          "id": "sell-btn",
+                          "class": "trade-btn sell-btn"
+                        },
+                        "dataUid": "uid-112"
+                      }
+                    ],
+                    "properties": {
+                      "class": "action-buttons"
+                    },
+                    "dataUid": "uid-110"
+                  },
+                  {
+                    "sourceTag": "text",
+                    "type": "custom",
+                    "children": [
+                      "Tap BUY or SELL to simulate a demo trade ticket."
+                    ],
+                    "properties": {
+                      "id": "trade-status",
+                      "class": "trade-status"
+                    },
+                    "dataUid": "uid-113"
+                  }
+                ],
+                "properties": {
+                  "class": "action-card"
+                },
+                "dataUid": "uid-108"
               }
             ],
             "properties": {
-              "class": "stats-row"
+              "class": "trade-row"
             },
-            "dataUid": "uid-90"
+            "dataUid": "uid-97"
           }
         ],
         "properties": {
@@ -1049,38 +1199,72 @@
     "panel": {
       "content": {
         "flexDirection": "column",
-        "padding": "24px",
-        "backgroundColor": "#071c44",
+        "padding": "30px",
+        "backgroundColor": "#061a3d",
         "width": "100%",
         "height": "100%",
-        "borderRadius": 26,
-        "border": "2px solid #3d78bd"
+        "borderRadius": 30,
+        "border": "2px solid #3973b6"
+      }
+    },
+    "top-row": {
+      "content": {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "flex-start",
+        "marginBottom": "18px"
       }
     },
     "eyebrow": {
       "content": {
         "fontSize": "18px",
-        "color": "#93d5ff",
-        "marginBottom": "10px"
+        "color": "#9bd8ff",
+        "marginBottom": "10px",
+        "marginRight": "10px"
       }
     },
     "header": {
       "content": {
         "fontSize": "42px",
-        "color": "#ffffff",
-        "marginBottom": "14px"
+        "color": "#ffffff"
+      }
+    },
+    "signal-badge": {
+      "content": {
+        "fontSize": "15px",
+        "color": "#082446",
+        "backgroundColor": "#9ad7ff",
+        "borderRadius": 999,
+        "padding": "10px 14px"
+      }
+    },
+    "hero-card": {
+      "content": {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "22px",
+        "backgroundColor": "#0c2f5d",
+        "borderRadius": 24,
+        "border": "1px solid #285a93",
+        "marginBottom": "18px"
+      }
+    },
+    "hero-left": {
+      "content": {
+        "flexGrow": "1"
       }
     },
     "hero-row": {
       "content": {
         "flexDirection": "row",
         "alignItems": "center",
-        "marginBottom": "14px"
+        "marginBottom": "16px"
       }
     },
     "price": {
       "content": {
-        "fontSize": "40px",
+        "fontSize": "42px",
         "color": "#ffffff",
         "marginRight": "18px"
       }
@@ -1093,59 +1277,103 @@
     },
     "pill-row": {
       "content": {
-        "flexDirection": "row",
-        "marginBottom": "16px"
+        "flexDirection": "row"
       }
     },
     "pill": {
       "content": {
-        "fontSize": "16px",
-        "color": "#e3f5ff",
-        "backgroundColor": "#144786",
+        "fontSize": "15px",
+        "color": "#eaf6ff",
+        "backgroundColor": "#154a8b",
         "borderRadius": 999,
         "padding": "10px 14px",
         "marginRight": "10px"
       }
     },
+    "hero-side": {
+      "content": {
+        "width": "180px",
+        "padding": "16px 18px",
+        "marginLeft": "16px",
+        "backgroundColor": "#08254a",
+        "borderRadius": 18,
+        "border": "1px solid #214f83"
+      }
+    },
+    "hero-side-label": {
+      "content": {
+        "fontSize": "14px",
+        "color": "#89cbff",
+        "marginBottom": "10px"
+      }
+    },
+    "hero-side-value": {
+      "content": {
+        "fontSize": "20px",
+        "color": "#ffffff"
+      }
+    },
     "chart-card": {
       "content": {
         "flexGrow": "1",
-        "padding": "18px",
-        "backgroundColor": "#0d3468",
-        "borderRadius": 22,
-        "border": "1px solid #2d609e",
+        "padding": "22px",
+        "backgroundColor": "#0c2f5d",
+        "borderRadius": 24,
+        "border": "1px solid #285a93",
         "marginBottom": "18px"
+      }
+    },
+    "chart-title-row": {
+      "content": {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "marginBottom": "14px"
+      }
+    },
+    "chart-header": {
+      "content": {
+        "fontSize": "22px",
+        "color": "#f4fbff",
+        "marginRight": "16px"
+      }
+    },
+    "chart-meta": {
+      "content": {
+        "fontSize": "15px",
+        "color": "#d3e9fb"
       }
     },
     "chart-shell": {
       "content": {
         "flexDirection": "row",
-        "marginBottom": "10px"
+        "marginBottom": "14px"
       }
     },
     "price-axis": {
       "content": {
-        "width": "70px",
-        "height": "180px",
+        "width": "74px",
+        "height": "190px",
         "justifyContent": "space-between",
         "alignItems": "flex-start",
-        "paddingTop": "4px",
-        "paddingBottom": "28px"
+        "paddingTop": "6px",
+        "paddingBottom": "28px",
+        "marginRight": "12px"
       }
     },
     "axis-price": {
       "content": {
         "fontSize": "14px",
-        "color": "#bed8f4"
+        "color": "#c1dbf8"
       }
     },
     "plot-stage": {
       "content": {
         "flexGrow": "1",
-        "height": "180px",
-        "padding": "10px 10px 0",
-        "backgroundColor": "#08254d",
-        "borderRadius": 18
+        "height": "190px",
+        "padding": "12px 12px 0",
+        "backgroundColor": "#072245",
+        "borderRadius": 20
       }
     },
     "grid-line": {
@@ -1154,36 +1382,22 @@
         "positionLeft": "10px",
         "positionRight": "10px",
         "height": "1px",
-        "backgroundColor": "#315d90"
+        "backgroundColor": "#325e92"
       }
     },
     "grid-top": {
       "content": {
-        "positionTop": "18px"
+        "positionTop": "20px"
       }
     },
     "grid-mid": {
       "content": {
-        "positionTop": "74px"
+        "positionTop": "78px"
       }
     },
     "grid-low": {
       "content": {
-        "positionTop": "130px"
-      }
-    },
-    "chart-title-row": {
-      "content": {
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "alignItems": "center"
-      }
-    },
-    "chart-header": {
-      "content": {
-        "fontSize": "22px",
-        "color": "#f4fbff",
-        "marginBottom": "12px"
+        "positionTop": "136px"
       }
     },
     "candle-grid": {
@@ -1191,7 +1405,7 @@
         "flexDirection": "row",
         "justifyContent": "space-between",
         "alignItems": "flex-end",
-        "height": "160px"
+        "height": "168px"
       }
     },
     "candle-column": {
@@ -1200,7 +1414,9 @@
         "height": "100%",
         "flexDirection": "column",
         "justifyContent": "flex-end",
-        "alignItems": "center"
+        "alignItems": "center",
+        "paddingLeft": "2px",
+        "paddingRight": "2px"
       }
     },
     "bar-top-gap": {
@@ -1215,49 +1431,48 @@
         "height": "56px",
         "backgroundColor": "#63d28f",
         "borderRadius": "8px 8px 2px 2px",
-        "border": "1px solid rgba(255, 255, 255, 0.18)",
-        "boxShadow": "0 0 16px rgba(99, 210, 143, 0.18)"
+        "border": "1px solid #d8f7e3"
       }
     },
     "bar-bottom-gap": {
       "content": {
         "width": "100%",
-        "height": "8px"
+        "height": "10px"
       }
     },
     "candle-label": {
       "content": {
         "fontSize": "11px",
         "color": "#b6d2ef",
-        "textAlign": "center"
+        "textAlign": "center",
+        "marginTop": "6px"
       }
     },
     "chart-meta-row": {
       "content": {
-        "marginBottom": "10px"
-      }
-    },
-    "chart-meta": {
-      "content": {
-        "fontSize": "15px",
-        "color": "#d2e7fb"
+        "alignItems": "flex-start",
+        "marginBottom": "0"
       }
     },
     "chart-footnote": {
       "content": {
-        "fontSize": "18px",
+        "flexGrow": "1",
+        "fontSize": "16px",
         "color": "#dcefff",
-        "marginBottom": "0"
+        "lineHeight": "1.35",
+        "marginLeft": "16px"
       }
     },
-    "label-strip": {
+    "trade-row": {
       "content": {
-        "fontSize": "14px",
-        "color": "#bad5f1"
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "stretch"
       }
     },
     "stats-row": {
       "content": {
+        "width": "61%",
         "flexDirection": "row",
         "justifyContent": "space-between"
       }
@@ -1265,23 +1480,78 @@
     "stat-card": {
       "content": {
         "width": "31%",
-        "padding": "14px 16px",
-        "backgroundColor": "#0b2a5a",
-        "borderRadius": 18,
-        "border": "1px solid #244f86"
+        "padding": "10px",
+        "backgroundColor": "#0a2a56",
+        "borderRadius": 20,
+        "border": "1px solid #1f4f84"
       }
     },
     "stat-label": {
       "content": {
         "fontSize": "15px",
-        "color": "#8ecfff",
-        "marginBottom": "8px"
+        "color": "#8fcfff",
+        "marginBottom": "14px",
+        "marginRight": "10px"
       }
     },
     "stat-value": {
       "content": {
-        "fontSize": "22px",
-        "color": "#ffffff"
+        "fontSize": "21px",
+        "color": "#ffffff",
+        "lineHeight": "1.3"
+      }
+    },
+    "action-card": {
+      "content": {
+        "width": "38%",
+        "padding": "20px",
+        "backgroundColor": "#08254a",
+        "borderRadius": 20,
+        "border": "1px solid #1f4f84",
+        "marginLeft": "20px"
+      }
+    },
+    "action-label": {
+      "content": {
+        "fontSize": "15px",
+        "color": "#8fcfff",
+        "marginBottom": "16px"
+      }
+    },
+    "action-buttons": {
+      "content": {
+        "flexDirection": "row",
+        "marginLeft": "8px",
+        "gap": "8px",
+        "marginBottom": "20px"
+      }
+    },
+    "trade-btn": {
+      "content": {
+        "width": "40%",
+        "padding": "16px",
+        "borderRadius": 18,
+        "color": "#ffffff",
+        "fontSize": "14px",
+        "border": "1px solid #a4d4ff"
+      }
+    },
+    "buy-btn": {
+      "content": {
+        "backgroundColor": "#1f8b57"
+      }
+    },
+    "sell-btn": {
+      "content": {
+        "backgroundColor": "#b4454c"
+      }
+    },
+    "trade-status": {
+      "content": {
+        "fontSize": "15px",
+        "color": "#d4e9fb",
+        "lineHeight": "1.35",
+        "paddingTop": "2px"
       }
     }
   },
@@ -1292,7 +1562,7 @@
         "column": 0
       },
       "end": {
-        "line": 308,
+        "line": 421,
         "column": 8
       }
     },
@@ -1302,7 +1572,7 @@
         "column": 2
       },
       "end": {
-        "line": 133,
+        "line": 154,
         "column": 8
       }
     },
@@ -1312,38 +1582,38 @@
         "column": 4
       },
       "end": {
-        "line": 2,
-        "column": 47
+        "line": 8,
+        "column": 10
       }
     },
     "uid-4": {
       "start": {
         "line": 3,
-        "column": 4
-      },
-      "end": {
-        "line": 3,
-        "column": 59
-      }
-    },
-    "uid-5": {
-      "start": {
-        "line": 5,
-        "column": 4
-      },
-      "end": {
-        "line": 8,
-        "column": 10
-      }
-    },
-    "uid-6": {
-      "start": {
-        "line": 6,
         "column": 6
       },
       "end": {
         "line": 6,
+        "column": 12
+      }
+    },
+    "uid-5": {
+      "start": {
+        "line": 4,
+        "column": 8
+      },
+      "end": {
+        "line": 4,
         "column": 51
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 5,
+        "column": 8
+      },
+      "end": {
+        "line": 5,
+        "column": 63
       }
     },
     "uid-7": {
@@ -1353,7 +1623,7 @@
       },
       "end": {
         "line": 7,
-        "column": 52
+        "column": 73
       }
     },
     "uid-8": {
@@ -1362,7 +1632,7 @@
         "column": 4
       },
       "end": {
-        "line": 14,
+        "line": 26,
         "column": 10
       }
     },
@@ -1372,271 +1642,251 @@
         "column": 6
       },
       "end": {
-        "line": 11,
-        "column": 65
+        "line": 21,
+        "column": 12
       }
     },
     "uid-10": {
       "start": {
         "line": 12,
-        "column": 6
+        "column": 8
       },
       "end": {
-        "line": 12,
-        "column": 64
+        "line": 15,
+        "column": 14
       }
     },
     "uid-11": {
       "start": {
         "line": 13,
-        "column": 6
+        "column": 10
       },
       "end": {
         "line": 13,
-        "column": 53
+        "column": 55
       }
     },
     "uid-12": {
       "start": {
-        "line": 16,
-        "column": 4
+        "line": 14,
+        "column": 10
       },
       "end": {
-        "line": 117,
-        "column": 10
+        "line": 14,
+        "column": 56
       }
     },
     "uid-13": {
       "start": {
-        "line": 17,
-        "column": 6
+        "line": 16,
+        "column": 8
       },
       "end": {
         "line": 20,
-        "column": 12
+        "column": 14
       }
     },
     "uid-14": {
       "start": {
-        "line": 18,
-        "column": 8
+        "line": 17,
+        "column": 10
       },
       "end": {
-        "line": 18,
-        "column": 61
+        "line": 17,
+        "column": 69
       }
     },
     "uid-15": {
       "start": {
-        "line": 19,
-        "column": 8
+        "line": 18,
+        "column": 10
       },
       "end": {
-        "line": 19,
+        "line": 18,
         "column": 68
       }
     },
     "uid-16": {
       "start": {
+        "line": 19,
+        "column": 10
+      },
+      "end": {
+        "line": 19,
+        "column": 57
+      }
+    },
+    "uid-17": {
+      "start": {
         "line": 22,
         "column": 6
       },
       "end": {
-        "line": 109,
+        "line": 25,
         "column": 12
       }
     },
-    "uid-17": {
+    "uid-18": {
       "start": {
         "line": 23,
         "column": 8
       },
       "end": {
-        "line": 27,
-        "column": 14
-      }
-    },
-    "uid-18": {
-      "start": {
-        "line": 24,
-        "column": 10
-      },
-      "end": {
-        "line": 24,
-        "column": 63
+        "line": 23,
+        "column": 55
       }
     },
     "uid-19": {
       "start": {
-        "line": 25,
-        "column": 10
+        "line": 24,
+        "column": 8
       },
       "end": {
-        "line": 25,
-        "column": 63
+        "line": 24,
+        "column": 74
       }
     },
     "uid-20": {
       "start": {
-        "line": 26,
-        "column": 10
+        "line": 28,
+        "column": 4
       },
       "end": {
-        "line": 26,
-        "column": 63
+        "line": 127,
+        "column": 10
       }
     },
     "uid-21": {
       "start": {
         "line": 29,
-        "column": 8
+        "column": 6
       },
       "end": {
-        "line": 108,
-        "column": 14
+        "line": 32,
+        "column": 12
       }
     },
     "uid-22": {
       "start": {
         "line": 30,
-        "column": 10
+        "column": 8
       },
       "end": {
         "line": 30,
-        "column": 48
+        "column": 61
       }
     },
     "uid-23": {
       "start": {
         "line": 31,
-        "column": 10
+        "column": 8
       },
       "end": {
         "line": 31,
-        "column": 48
+        "column": 68
       }
     },
     "uid-24": {
       "start": {
-        "line": 32,
-        "column": 10
+        "line": 34,
+        "column": 6
       },
       "end": {
-        "line": 32,
-        "column": 48
+        "line": 121,
+        "column": 12
       }
     },
     "uid-25": {
       "start": {
-        "line": 34,
-        "column": 10
+        "line": 35,
+        "column": 8
       },
       "end": {
-        "line": 107,
-        "column": 16
+        "line": 39,
+        "column": 14
       }
     },
     "uid-26": {
       "start": {
-        "line": 35,
-        "column": 12
+        "line": 36,
+        "column": 10
       },
       "end": {
-        "line": 40,
-        "column": 18
+        "line": 36,
+        "column": 63
       }
     },
     "uid-27": {
       "start": {
-        "line": 36,
-        "column": 14
+        "line": 37,
+        "column": 10
       },
       "end": {
-        "line": 36,
+        "line": 37,
         "column": 63
       }
     },
     "uid-28": {
       "start": {
-        "line": 37,
-        "column": 14
+        "line": 38,
+        "column": 10
       },
       "end": {
-        "line": 37,
-        "column": 55
+        "line": 38,
+        "column": 63
       }
     },
     "uid-29": {
       "start": {
-        "line": 38,
-        "column": 14
+        "line": 41,
+        "column": 8
       },
       "end": {
-        "line": 38,
-        "column": 69
+        "line": 120,
+        "column": 14
       }
     },
     "uid-30": {
       "start": {
-        "line": 39,
-        "column": 14
+        "line": 42,
+        "column": 10
       },
       "end": {
-        "line": 39,
-        "column": 66
+        "line": 42,
+        "column": 48
       }
     },
     "uid-31": {
       "start": {
-        "line": 41,
-        "column": 12
+        "line": 43,
+        "column": 10
       },
       "end": {
-        "line": 46,
-        "column": 18
+        "line": 43,
+        "column": 48
       }
     },
     "uid-32": {
       "start": {
-        "line": 42,
-        "column": 14
+        "line": 44,
+        "column": 10
       },
       "end": {
-        "line": 42,
-        "column": 63
+        "line": 44,
+        "column": 48
       }
     },
     "uid-33": {
       "start": {
-        "line": 43,
-        "column": 14
+        "line": 46,
+        "column": 10
       },
       "end": {
-        "line": 43,
-        "column": 55
+        "line": 119,
+        "column": 16
       }
     },
     "uid-34": {
-      "start": {
-        "line": 44,
-        "column": 14
-      },
-      "end": {
-        "line": 44,
-        "column": 69
-      }
-    },
-    "uid-35": {
-      "start": {
-        "line": 45,
-        "column": 14
-      },
-      "end": {
-        "line": 45,
-        "column": 66
-      }
-    },
-    "uid-36": {
       "start": {
         "line": 47,
         "column": 12
@@ -1646,7 +1896,7 @@
         "column": 18
       }
     },
-    "uid-37": {
+    "uid-35": {
       "start": {
         "line": 48,
         "column": 14
@@ -1656,7 +1906,7 @@
         "column": 63
       }
     },
-    "uid-38": {
+    "uid-36": {
       "start": {
         "line": 49,
         "column": 14
@@ -1666,7 +1916,7 @@
         "column": 55
       }
     },
-    "uid-39": {
+    "uid-37": {
       "start": {
         "line": 50,
         "column": 14
@@ -1676,7 +1926,7 @@
         "column": 69
       }
     },
-    "uid-40": {
+    "uid-38": {
       "start": {
         "line": 51,
         "column": 14
@@ -1686,7 +1936,7 @@
         "column": 66
       }
     },
-    "uid-41": {
+    "uid-39": {
       "start": {
         "line": 53,
         "column": 12
@@ -1696,7 +1946,7 @@
         "column": 18
       }
     },
-    "uid-42": {
+    "uid-40": {
       "start": {
         "line": 54,
         "column": 14
@@ -1706,7 +1956,7 @@
         "column": 63
       }
     },
-    "uid-43": {
+    "uid-41": {
       "start": {
         "line": 55,
         "column": 14
@@ -1716,7 +1966,7 @@
         "column": 55
       }
     },
-    "uid-44": {
+    "uid-42": {
       "start": {
         "line": 56,
         "column": 14
@@ -1726,7 +1976,7 @@
         "column": 69
       }
     },
-    "uid-45": {
+    "uid-43": {
       "start": {
         "line": 57,
         "column": 14
@@ -1736,7 +1986,7 @@
         "column": 66
       }
     },
-    "uid-46": {
+    "uid-44": {
       "start": {
         "line": 59,
         "column": 12
@@ -1746,7 +1996,7 @@
         "column": 18
       }
     },
-    "uid-47": {
+    "uid-45": {
       "start": {
         "line": 60,
         "column": 14
@@ -1756,7 +2006,7 @@
         "column": 63
       }
     },
-    "uid-48": {
+    "uid-46": {
       "start": {
         "line": 61,
         "column": 14
@@ -1766,7 +2016,7 @@
         "column": 55
       }
     },
-    "uid-49": {
+    "uid-47": {
       "start": {
         "line": 62,
         "column": 14
@@ -1776,7 +2026,7 @@
         "column": 69
       }
     },
-    "uid-50": {
+    "uid-48": {
       "start": {
         "line": 63,
         "column": 14
@@ -1786,7 +2036,7 @@
         "column": 66
       }
     },
-    "uid-51": {
+    "uid-49": {
       "start": {
         "line": 65,
         "column": 12
@@ -1796,7 +2046,7 @@
         "column": 18
       }
     },
-    "uid-52": {
+    "uid-50": {
       "start": {
         "line": 66,
         "column": 14
@@ -1806,7 +2056,7 @@
         "column": 63
       }
     },
-    "uid-53": {
+    "uid-51": {
       "start": {
         "line": 67,
         "column": 14
@@ -1816,7 +2066,7 @@
         "column": 55
       }
     },
-    "uid-54": {
+    "uid-52": {
       "start": {
         "line": 68,
         "column": 14
@@ -1826,7 +2076,7 @@
         "column": 69
       }
     },
-    "uid-55": {
+    "uid-53": {
       "start": {
         "line": 69,
         "column": 14
@@ -1836,7 +2086,7 @@
         "column": 66
       }
     },
-    "uid-56": {
+    "uid-54": {
       "start": {
         "line": 71,
         "column": 12
@@ -1846,7 +2096,7 @@
         "column": 18
       }
     },
-    "uid-57": {
+    "uid-55": {
       "start": {
         "line": 72,
         "column": 14
@@ -1856,7 +2106,7 @@
         "column": 63
       }
     },
-    "uid-58": {
+    "uid-56": {
       "start": {
         "line": 73,
         "column": 14
@@ -1866,7 +2116,7 @@
         "column": 55
       }
     },
-    "uid-59": {
+    "uid-57": {
       "start": {
         "line": 74,
         "column": 14
@@ -1876,7 +2126,7 @@
         "column": 69
       }
     },
-    "uid-60": {
+    "uid-58": {
       "start": {
         "line": 75,
         "column": 14
@@ -1886,7 +2136,7 @@
         "column": 66
       }
     },
-    "uid-61": {
+    "uid-59": {
       "start": {
         "line": 77,
         "column": 12
@@ -1896,7 +2146,7 @@
         "column": 18
       }
     },
-    "uid-62": {
+    "uid-60": {
       "start": {
         "line": 78,
         "column": 14
@@ -1906,7 +2156,7 @@
         "column": 63
       }
     },
-    "uid-63": {
+    "uid-61": {
       "start": {
         "line": 79,
         "column": 14
@@ -1916,7 +2166,7 @@
         "column": 55
       }
     },
-    "uid-64": {
+    "uid-62": {
       "start": {
         "line": 80,
         "column": 14
@@ -1926,7 +2176,7 @@
         "column": 69
       }
     },
-    "uid-65": {
+    "uid-63": {
       "start": {
         "line": 81,
         "column": 14
@@ -1936,7 +2186,7 @@
         "column": 66
       }
     },
-    "uid-66": {
+    "uid-64": {
       "start": {
         "line": 83,
         "column": 12
@@ -1946,7 +2196,7 @@
         "column": 18
       }
     },
-    "uid-67": {
+    "uid-65": {
       "start": {
         "line": 84,
         "column": 14
@@ -1956,7 +2206,7 @@
         "column": 63
       }
     },
-    "uid-68": {
+    "uid-66": {
       "start": {
         "line": 85,
         "column": 14
@@ -1966,7 +2216,7 @@
         "column": 55
       }
     },
-    "uid-69": {
+    "uid-67": {
       "start": {
         "line": 86,
         "column": 14
@@ -1976,7 +2226,7 @@
         "column": 69
       }
     },
-    "uid-70": {
+    "uid-68": {
       "start": {
         "line": 87,
         "column": 14
@@ -1986,7 +2236,7 @@
         "column": 66
       }
     },
-    "uid-71": {
+    "uid-69": {
       "start": {
         "line": 89,
         "column": 12
@@ -1996,7 +2246,7 @@
         "column": 18
       }
     },
-    "uid-72": {
+    "uid-70": {
       "start": {
         "line": 90,
         "column": 14
@@ -2006,7 +2256,7 @@
         "column": 63
       }
     },
-    "uid-73": {
+    "uid-71": {
       "start": {
         "line": 91,
         "column": 14
@@ -2016,7 +2266,7 @@
         "column": 55
       }
     },
-    "uid-74": {
+    "uid-72": {
       "start": {
         "line": 92,
         "column": 14
@@ -2026,7 +2276,7 @@
         "column": 69
       }
     },
-    "uid-75": {
+    "uid-73": {
       "start": {
         "line": 93,
         "column": 14
@@ -2036,7 +2286,7 @@
         "column": 66
       }
     },
-    "uid-76": {
+    "uid-74": {
       "start": {
         "line": 95,
         "column": 12
@@ -2046,47 +2296,47 @@
         "column": 18
       }
     },
-    "uid-77": {
+    "uid-75": {
       "start": {
         "line": 96,
         "column": 14
       },
       "end": {
         "line": 96,
-        "column": 64
+        "column": 63
+      }
+    },
+    "uid-76": {
+      "start": {
+        "line": 97,
+        "column": 14
+      },
+      "end": {
+        "line": 97,
+        "column": 55
+      }
+    },
+    "uid-77": {
+      "start": {
+        "line": 98,
+        "column": 14
+      },
+      "end": {
+        "line": 98,
+        "column": 69
       }
     },
     "uid-78": {
       "start": {
-        "line": 97,
+        "line": 99,
         "column": 14
       },
       "end": {
-        "line": 97,
-        "column": 56
+        "line": 99,
+        "column": 66
       }
     },
     "uid-79": {
-      "start": {
-        "line": 98,
-        "column": 14
-      },
-      "end": {
-        "line": 98,
-        "column": 70
-      }
-    },
-    "uid-80": {
-      "start": {
-        "line": 99,
-        "column": 14
-      },
-      "end": {
-        "line": 99,
-        "column": 67
-      }
-    },
-    "uid-81": {
       "start": {
         "line": 101,
         "column": 12
@@ -2096,514 +2346,814 @@
         "column": 18
       }
     },
-    "uid-82": {
+    "uid-80": {
       "start": {
         "line": 102,
         "column": 14
       },
       "end": {
         "line": 102,
-        "column": 64
+        "column": 63
+      }
+    },
+    "uid-81": {
+      "start": {
+        "line": 103,
+        "column": 14
+      },
+      "end": {
+        "line": 103,
+        "column": 55
+      }
+    },
+    "uid-82": {
+      "start": {
+        "line": 104,
+        "column": 14
+      },
+      "end": {
+        "line": 104,
+        "column": 69
       }
     },
     "uid-83": {
       "start": {
-        "line": 103,
+        "line": 105,
         "column": 14
       },
       "end": {
-        "line": 103,
-        "column": 56
+        "line": 105,
+        "column": 66
       }
     },
     "uid-84": {
       "start": {
-        "line": 104,
-        "column": 14
+        "line": 107,
+        "column": 12
       },
       "end": {
-        "line": 104,
-        "column": 70
+        "line": 112,
+        "column": 18
       }
     },
     "uid-85": {
       "start": {
-        "line": 105,
+        "line": 108,
         "column": 14
       },
       "end": {
-        "line": 105,
-        "column": 67
+        "line": 108,
+        "column": 64
       }
     },
     "uid-86": {
       "start": {
-        "line": 111,
-        "column": 6
+        "line": 109,
+        "column": 14
       },
       "end": {
-        "line": 114,
-        "column": 12
+        "line": 109,
+        "column": 56
       }
     },
     "uid-87": {
       "start": {
-        "line": 112,
-        "column": 8
+        "line": 110,
+        "column": 14
       },
       "end": {
-        "line": 112,
-        "column": 66
+        "line": 110,
+        "column": 70
       }
     },
     "uid-88": {
       "start": {
-        "line": 113,
-        "column": 8
+        "line": 111,
+        "column": 14
       },
       "end": {
-        "line": 113,
-        "column": 72
+        "line": 111,
+        "column": 67
       }
     },
     "uid-89": {
       "start": {
-        "line": 116,
-        "column": 6
+        "line": 113,
+        "column": 12
       },
       "end": {
-        "line": 116,
-        "column": 113
+        "line": 118,
+        "column": 18
       }
     },
     "uid-90": {
       "start": {
-        "line": 119,
-        "column": 4
+        "line": 114,
+        "column": 14
       },
       "end": {
-        "line": 132,
-        "column": 10
+        "line": 114,
+        "column": 64
       }
     },
     "uid-91": {
       "start": {
-        "line": 120,
-        "column": 6
+        "line": 115,
+        "column": 14
       },
       "end": {
-        "line": 123,
-        "column": 12
+        "line": 115,
+        "column": 56
       }
     },
     "uid-92": {
       "start": {
-        "line": 121,
-        "column": 8
+        "line": 116,
+        "column": 14
       },
       "end": {
-        "line": 121,
-        "column": 46
+        "line": 116,
+        "column": 70
       }
     },
     "uid-93": {
       "start": {
-        "line": 122,
-        "column": 8
+        "line": 117,
+        "column": 14
       },
       "end": {
-        "line": 122,
-        "column": 69
+        "line": 117,
+        "column": 67
       }
     },
     "uid-94": {
       "start": {
-        "line": 124,
+        "line": 123,
         "column": 6
       },
       "end": {
-        "line": 127,
+        "line": 126,
         "column": 12
       }
     },
     "uid-95": {
       "start": {
-        "line": 125,
+        "line": 124,
         "column": 8
       },
       "end": {
-        "line": 125,
-        "column": 44
+        "line": 124,
+        "column": 66
       }
     },
     "uid-96": {
       "start": {
-        "line": 126,
+        "line": 125,
         "column": 8
       },
       "end": {
-        "line": 126,
-        "column": 62
+        "line": 125,
+        "column": 115
       }
     },
     "uid-97": {
       "start": {
-        "line": 128,
-        "column": 6
+        "line": 129,
+        "column": 4
       },
       "end": {
-        "line": 131,
-        "column": 12
+        "line": 153,
+        "column": 10
       }
     },
     "uid-98": {
       "start": {
-        "line": 129,
-        "column": 8
+        "line": 130,
+        "column": 6
       },
       "end": {
-        "line": 129,
-        "column": 44
+        "line": 143,
+        "column": 12
       }
     },
     "uid-99": {
       "start": {
-        "line": 130,
+        "line": 131,
         "column": 8
       },
       "end": {
-        "line": 130,
-        "column": 56
+        "line": 134,
+        "column": 14
+      }
+    },
+    "uid-100": {
+      "start": {
+        "line": 132,
+        "column": 10
+      },
+      "end": {
+        "line": 132,
+        "column": 48
+      }
+    },
+    "uid-101": {
+      "start": {
+        "line": 133,
+        "column": 10
+      },
+      "end": {
+        "line": 133,
+        "column": 78
+      }
+    },
+    "uid-102": {
+      "start": {
+        "line": 135,
+        "column": 8
+      },
+      "end": {
+        "line": 138,
+        "column": 14
+      }
+    },
+    "uid-103": {
+      "start": {
+        "line": 136,
+        "column": 10
+      },
+      "end": {
+        "line": 136,
+        "column": 46
+      }
+    },
+    "uid-104": {
+      "start": {
+        "line": 137,
+        "column": 10
+      },
+      "end": {
+        "line": 137,
+        "column": 64
+      }
+    },
+    "uid-105": {
+      "start": {
+        "line": 139,
+        "column": 8
+      },
+      "end": {
+        "line": 142,
+        "column": 14
+      }
+    },
+    "uid-106": {
+      "start": {
+        "line": 140,
+        "column": 10
+      },
+      "end": {
+        "line": 140,
+        "column": 46
+      }
+    },
+    "uid-107": {
+      "start": {
+        "line": 141,
+        "column": 10
+      },
+      "end": {
+        "line": 141,
+        "column": 58
+      }
+    },
+    "uid-108": {
+      "start": {
+        "line": 145,
+        "column": 6
+      },
+      "end": {
+        "line": 152,
+        "column": 12
+      }
+    },
+    "uid-109": {
+      "start": {
+        "line": 146,
+        "column": 8
+      },
+      "end": {
+        "line": 146,
+        "column": 53
+      }
+    },
+    "uid-110": {
+      "start": {
+        "line": 147,
+        "column": 8
+      },
+      "end": {
+        "line": 150,
+        "column": 14
+      }
+    },
+    "uid-111": {
+      "start": {
+        "line": 148,
+        "column": 10
+      },
+      "end": {
+        "line": 148,
+        "column": 69
+      }
+    },
+    "uid-112": {
+      "start": {
+        "line": 149,
+        "column": 10
+      },
+      "end": {
+        "line": 149,
+        "column": 72
+      }
+    },
+    "uid-113": {
+      "start": {
+        "line": 151,
+        "column": 8
+      },
+      "end": {
+        "line": 151,
+        "column": 108
       }
     },
     "panel": {
       "start": {
-        "line": 135,
+        "line": 156,
         "column": 4
       },
       "end": {
-        "line": 135,
+        "line": 156,
         "column": 10
+      }
+    },
+    "top-row": {
+      "start": {
+        "line": 165,
+        "column": 4
+      },
+      "end": {
+        "line": 165,
+        "column": 12
       }
     },
     "eyebrow": {
       "start": {
-        "line": 144,
+        "line": 171,
         "column": 4
       },
       "end": {
-        "line": 144,
+        "line": 171,
         "column": 12
       }
     },
     "header": {
       "start": {
-        "line": 149,
+        "line": 177,
         "column": 4
       },
       "end": {
-        "line": 149,
+        "line": 177,
         "column": 11
+      }
+    },
+    "signal-badge": {
+      "start": {
+        "line": 181,
+        "column": 4
+      },
+      "end": {
+        "line": 181,
+        "column": 17
+      }
+    },
+    "hero-card": {
+      "start": {
+        "line": 188,
+        "column": 4
+      },
+      "end": {
+        "line": 188,
+        "column": 14
+      }
+    },
+    "hero-left": {
+      "start": {
+        "line": 198,
+        "column": 4
+      },
+      "end": {
+        "line": 198,
+        "column": 14
       }
     },
     "hero-row": {
       "start": {
-        "line": 154,
+        "line": 201,
         "column": 4
       },
       "end": {
-        "line": 154,
+        "line": 201,
         "column": 13
       }
     },
     "price": {
       "start": {
-        "line": 159,
+        "line": 206,
         "column": 4
       },
       "end": {
-        "line": 159,
+        "line": 206,
         "column": 10
       }
     },
     "change": {
       "start": {
-        "line": 164,
+        "line": 211,
         "column": 4
       },
       "end": {
-        "line": 164,
+        "line": 211,
         "column": 11
       }
     },
     "pill-row": {
       "start": {
-        "line": 168,
+        "line": 215,
         "column": 4
       },
       "end": {
-        "line": 168,
+        "line": 215,
         "column": 13
       }
     },
     "pill": {
       "start": {
-        "line": 172,
+        "line": 218,
         "column": 4
       },
       "end": {
-        "line": 172,
+        "line": 218,
         "column": 9
+      }
+    },
+    "hero-side": {
+      "start": {
+        "line": 226,
+        "column": 4
+      },
+      "end": {
+        "line": 226,
+        "column": 14
+      }
+    },
+    "hero-side-label": {
+      "start": {
+        "line": 234,
+        "column": 4
+      },
+      "end": {
+        "line": 234,
+        "column": 20
+      }
+    },
+    "hero-side-value": {
+      "start": {
+        "line": 239,
+        "column": 4
+      },
+      "end": {
+        "line": 239,
+        "column": 20
       }
     },
     "chart-card": {
       "start": {
-        "line": 180,
+        "line": 243,
         "column": 4
       },
       "end": {
-        "line": 180,
+        "line": 243,
         "column": 15
-      }
-    },
-    "chart-shell": {
-      "start": {
-        "line": 188,
-        "column": 4
-      },
-      "end": {
-        "line": 188,
-        "column": 16
-      }
-    },
-    "price-axis": {
-      "start": {
-        "line": 192,
-        "column": 4
-      },
-      "end": {
-        "line": 192,
-        "column": 15
-      }
-    },
-    "axis-price": {
-      "start": {
-        "line": 200,
-        "column": 4
-      },
-      "end": {
-        "line": 200,
-        "column": 15
-      }
-    },
-    "plot-stage": {
-      "start": {
-        "line": 204,
-        "column": 4
-      },
-      "end": {
-        "line": 204,
-        "column": 15
-      }
-    },
-    "grid-line": {
-      "start": {
-        "line": 211,
-        "column": 4
-      },
-      "end": {
-        "line": 211,
-        "column": 14
-      }
-    },
-    "grid-top": {
-      "start": {
-        "line": 218,
-        "column": 4
-      },
-      "end": {
-        "line": 218,
-        "column": 13
-      }
-    },
-    "grid-mid": {
-      "start": {
-        "line": 221,
-        "column": 4
-      },
-      "end": {
-        "line": 221,
-        "column": 13
-      }
-    },
-    "grid-low": {
-      "start": {
-        "line": 224,
-        "column": 4
-      },
-      "end": {
-        "line": 224,
-        "column": 13
       }
     },
     "chart-title-row": {
       "start": {
-        "line": 227,
+        "line": 251,
         "column": 4
       },
       "end": {
-        "line": 227,
+        "line": 251,
         "column": 20
       }
     },
     "chart-header": {
       "start": {
-        "line": 232,
+        "line": 257,
         "column": 4
       },
       "end": {
-        "line": 232,
+        "line": 257,
         "column": 17
+      }
+    },
+    "chart-meta": {
+      "start": {
+        "line": 262,
+        "column": 4
+      },
+      "end": {
+        "line": 262,
+        "column": 15
+      }
+    },
+    "chart-shell": {
+      "start": {
+        "line": 266,
+        "column": 4
+      },
+      "end": {
+        "line": 266,
+        "column": 16
+      }
+    },
+    "price-axis": {
+      "start": {
+        "line": 270,
+        "column": 4
+      },
+      "end": {
+        "line": 270,
+        "column": 15
+      }
+    },
+    "axis-price": {
+      "start": {
+        "line": 279,
+        "column": 4
+      },
+      "end": {
+        "line": 279,
+        "column": 15
+      }
+    },
+    "plot-stage": {
+      "start": {
+        "line": 283,
+        "column": 4
+      },
+      "end": {
+        "line": 283,
+        "column": 15
+      }
+    },
+    "grid-line": {
+      "start": {
+        "line": 290,
+        "column": 4
+      },
+      "end": {
+        "line": 290,
+        "column": 14
+      }
+    },
+    "grid-top": {
+      "start": {
+        "line": 297,
+        "column": 4
+      },
+      "end": {
+        "line": 297,
+        "column": 13
+      }
+    },
+    "grid-mid": {
+      "start": {
+        "line": 300,
+        "column": 4
+      },
+      "end": {
+        "line": 300,
+        "column": 13
+      }
+    },
+    "grid-low": {
+      "start": {
+        "line": 303,
+        "column": 4
+      },
+      "end": {
+        "line": 303,
+        "column": 13
       }
     },
     "candle-grid": {
       "start": {
-        "line": 237,
+        "line": 306,
         "column": 4
       },
       "end": {
-        "line": 237,
+        "line": 306,
         "column": 16
       }
     },
     "candle-column": {
       "start": {
-        "line": 243,
+        "line": 312,
         "column": 4
       },
       "end": {
-        "line": 243,
+        "line": 312,
         "column": 18
       }
     },
     "bar-top-gap": {
       "start": {
-        "line": 250,
+        "line": 321,
         "column": 4
       },
       "end": {
-        "line": 250,
+        "line": 321,
         "column": 16
       }
     },
     "price-bar": {
       "start": {
-        "line": 254,
+        "line": 325,
         "column": 4
       },
       "end": {
-        "line": 254,
+        "line": 325,
         "column": 14
       }
     },
     "bar-bottom-gap": {
       "start": {
-        "line": 262,
+        "line": 332,
         "column": 4
       },
       "end": {
-        "line": 262,
+        "line": 332,
         "column": 19
       }
     },
     "candle-label": {
       "start": {
-        "line": 266,
+        "line": 336,
         "column": 4
       },
       "end": {
-        "line": 266,
+        "line": 336,
         "column": 17
       }
     },
     "chart-meta-row": {
       "start": {
-        "line": 271,
+        "line": 342,
         "column": 4
       },
       "end": {
-        "line": 271,
+        "line": 342,
         "column": 19
-      }
-    },
-    "chart-meta": {
-      "start": {
-        "line": 274,
-        "column": 4
-      },
-      "end": {
-        "line": 274,
-        "column": 15
       }
     },
     "chart-footnote": {
       "start": {
-        "line": 278,
+        "line": 346,
         "column": 4
       },
       "end": {
-        "line": 278,
+        "line": 346,
         "column": 19
       }
     },
-    "label-strip": {
+    "trade-row": {
       "start": {
-        "line": 283,
+        "line": 353,
         "column": 4
       },
       "end": {
-        "line": 283,
-        "column": 16
+        "line": 353,
+        "column": 14
       }
     },
     "stats-row": {
       "start": {
-        "line": 287,
+        "line": 358,
         "column": 4
       },
       "end": {
-        "line": 287,
+        "line": 358,
         "column": 14
       }
     },
     "stat-card": {
       "start": {
-        "line": 291,
+        "line": 363,
         "column": 4
       },
       "end": {
-        "line": 291,
+        "line": 363,
         "column": 14
       }
     },
     "stat-label": {
       "start": {
-        "line": 298,
+        "line": 370,
         "column": 4
       },
       "end": {
-        "line": 298,
+        "line": 370,
         "column": 15
       }
     },
     "stat-value": {
       "start": {
-        "line": 303,
+        "line": 376,
         "column": 4
       },
       "end": {
-        "line": 303,
+        "line": 376,
         "column": 15
+      }
+    },
+    "action-card": {
+      "start": {
+        "line": 381,
+        "column": 4
+      },
+      "end": {
+        "line": 381,
+        "column": 16
+      }
+    },
+    "action-label": {
+      "start": {
+        "line": 389,
+        "column": 4
+      },
+      "end": {
+        "line": 389,
+        "column": 17
+      }
+    },
+    "action-buttons": {
+      "start": {
+        "line": 394,
+        "column": 4
+      },
+      "end": {
+        "line": 394,
+        "column": 19
+      }
+    },
+    "trade-btn": {
+      "start": {
+        "line": 400,
+        "column": 4
+      },
+      "end": {
+        "line": 400,
+        "column": 14
+      }
+    },
+    "buy-btn": {
+      "start": {
+        "line": 408,
+        "column": 4
+      },
+      "end": {
+        "line": 408,
+        "column": 12
+      }
+    },
+    "sell-btn": {
+      "start": {
+        "line": 411,
+        "column": 4
+      },
+      "end": {
+        "line": 411,
+        "column": 13
+      }
+    },
+    "trade-status": {
+      "start": {
+        "line": 414,
+        "column": 4
+      },
+      "end": {
+        "line": 414,
+        "column": 17
       }
     }
   }
