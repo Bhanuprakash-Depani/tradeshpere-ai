@@ -172,7 +172,11 @@
         "borderRadius": 16,
         "color": "#eaf6ff",
         "fontSize": "19px",
-        "border": "1px solid rgba(123, 190, 255, 0.22)"
+        "border": "1px solid rgba(123, 190, 255, 0.22)",
+        "active": {
+          "backgroundColor": "rgba(52, 126, 220, 0.96)",
+          "borderColor": "rgba(181, 224, 255, 0.6)"
+        }
       }
     },
     "footer-card": {
@@ -205,7 +209,7 @@
         "column": 0
       },
       "end": {
-        "line": 67,
+        "line": 71,
         "column": 8
       }
     },
@@ -371,31 +375,31 @@
     },
     "footer-card": {
       "start": {
-        "line": 50,
+        "line": 54,
         "column": 4
       },
       "end": {
-        "line": 50,
+        "line": 54,
         "column": 16
       }
     },
     "footer-label": {
       "start": {
-        "line": 57,
+        "line": 61,
         "column": 4
       },
       "end": {
-        "line": 57,
+        "line": 61,
         "column": 17
       }
     },
     "footer-value": {
       "start": {
-        "line": 62,
+        "line": 66,
         "column": 4
       },
       "end": {
-        "line": 62,
+        "line": 66,
         "column": 17
       }
     }
