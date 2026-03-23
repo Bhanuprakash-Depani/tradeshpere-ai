@@ -1050,11 +1050,11 @@
       "content": {
         "flexDirection": "column",
         "padding": "24px",
-        "backgroundColor": "rgba(7, 28, 68, 0.96)",
+        "backgroundColor": "#071c44",
         "width": "100%",
         "height": "100%",
         "borderRadius": 26,
-        "border": "2px solid rgba(110, 180, 255, 0.45)"
+        "border": "2px solid #3d78bd"
       }
     },
     "eyebrow": {
@@ -1099,9 +1099,9 @@
     },
     "pill": {
       "content": {
-        "fontSize": "15px",
+        "fontSize": "16px",
         "color": "#e3f5ff",
-        "backgroundColor": "rgba(30, 87, 168, 0.8)",
+        "backgroundColor": "#144786",
         "borderRadius": 999,
         "padding": "10px 14px",
         "marginRight": "10px"
@@ -1111,9 +1111,9 @@
       "content": {
         "flexGrow": "1",
         "padding": "18px",
-        "backgroundColor": "rgba(16, 56, 118, 0.82)",
+        "backgroundColor": "#0d3468",
         "borderRadius": 22,
-        "border": "1px solid rgba(188, 228, 255, 0.3)",
+        "border": "1px solid #2d609e",
         "marginBottom": "18px"
       }
     },
@@ -1135,8 +1135,8 @@
     },
     "axis-price": {
       "content": {
-        "fontSize": "13px",
-        "color": "rgba(210, 233, 255, 0.72)"
+        "fontSize": "14px",
+        "color": "#bed8f4"
       }
     },
     "plot-stage": {
@@ -1144,7 +1144,7 @@
         "flexGrow": "1",
         "height": "180px",
         "padding": "10px 10px 0",
-        "backgroundColor": "rgba(7, 28, 68, 0.34)",
+        "backgroundColor": "#08254d",
         "borderRadius": 18
       }
     },
@@ -1154,7 +1154,7 @@
         "positionLeft": "10px",
         "positionRight": "10px",
         "height": "1px",
-        "backgroundColor": "rgba(173, 213, 255, 0.18)"
+        "backgroundColor": "#315d90"
       }
     },
     "grid-top": {
@@ -1227,8 +1227,8 @@
     },
     "candle-label": {
       "content": {
-        "fontSize": "10px",
-        "color": "rgba(210, 233, 255, 0.68)",
+        "fontSize": "11px",
+        "color": "#b6d2ef",
         "textAlign": "center"
       }
     },
@@ -1240,20 +1240,20 @@
     "chart-meta": {
       "content": {
         "fontSize": "15px",
-        "color": "rgba(210, 233, 255, 0.82)"
+        "color": "#d2e7fb"
       }
     },
     "chart-footnote": {
       "content": {
         "fontSize": "18px",
-        "color": "rgba(232, 246, 255, 0.82)",
+        "color": "#dcefff",
         "marginBottom": "0"
       }
     },
     "label-strip": {
       "content": {
         "fontSize": "14px",
-        "color": "rgba(210, 233, 255, 0.68)"
+        "color": "#bad5f1"
       }
     },
     "stats-row": {
@@ -1266,15 +1266,15 @@
       "content": {
         "width": "31%",
         "padding": "14px 16px",
-        "backgroundColor": "rgba(10, 35, 73, 0.9)",
+        "backgroundColor": "#0b2a5a",
         "borderRadius": 18,
-        "border": "1px solid rgba(123, 190, 255, 0.14)"
+        "border": "1px solid #244f86"
       }
     },
     "stat-label": {
       "content": {
         "fontSize": "15px",
-        "color": "rgba(143, 203, 255, 0.82)",
+        "color": "#8ecfff",
         "marginBottom": "8px"
       }
     },

@@ -191,11 +191,11 @@
       "content": {
         "flexDirection": "column",
         "padding": "28px",
-        "backgroundColor": "rgba(7, 20, 45, 0.94)",
+        "backgroundColor": "#071c44",
         "width": "100%",
         "height": "100%",
         "borderRadius": 26,
-        "border": "1px solid rgba(110, 180, 255, 0.28)"
+        "border": "1px solid #2f5f9c"
       }
     },
     "eyebrow": {
@@ -214,7 +214,7 @@
     },
     "content": {
       "content": {
-        "fontSize": "18px",
+        "fontSize": "19px",
         "color": "#eef7ff",
         "marginBottom": "16px"
       }
@@ -222,16 +222,16 @@
     "metric-card": {
       "content": {
         "padding": "18px",
-        "backgroundColor": "rgba(10, 35, 73, 0.9)",
+        "backgroundColor": "#0b2a5a",
         "borderRadius": 18,
-        "border": "1px solid rgba(123, 190, 255, 0.16)",
+        "border": "1px solid #244f86",
         "marginBottom": "14px"
       }
     },
     "metric-label": {
       "content": {
         "fontSize": "15px",
-        "color": "rgba(143, 203, 255, 0.82)",
+        "color": "#8ecfff",
         "marginBottom": "8px"
       }
     },
@@ -245,7 +245,7 @@
     "confidence": {
       "content": {
         "fontSize": "16px",
-        "color": "rgba(223, 241, 255, 0.74)"
+        "color": "#c7def4"
       }
     },
     "point-text": {
@@ -257,10 +257,10 @@
     "chat-container": {
       "content": {
         "marginTop": "auto",
-        "backgroundColor": "rgba(6, 29, 62, 0.92)",
+        "backgroundColor": "#08254d",
         "padding": "18px",
         "borderRadius": 18,
-        "border": "1px solid rgba(123, 190, 255, 0.18)"
+        "border": "1px solid #28558b"
       }
     },
     "chat-title": {
@@ -272,18 +272,18 @@
     },
     "mic-btn": {
       "content": {
-        "backgroundColor": "rgba(37, 95, 176, 0.95)",
+        "backgroundColor": "#1d5ab0",
         "padding": "14px",
         "borderRadius": 20,
         "color": "white",
         "marginBottom": "12px",
-        "border": "1px solid rgba(171, 220, 255, 0.18)"
+        "border": "1px solid #99cfff"
       }
     },
     "chat-prompt": {
       "content": {
         "fontSize": "15px",
-        "color": "rgba(216, 237, 255, 0.72)",
+        "color": "#bfd7f3",
         "marginBottom": "10px"
       }
     },
