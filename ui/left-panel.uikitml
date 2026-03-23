@@ -1,33 +1,68 @@
 <uikit>
   <div class="panel">
-    <text class="header">Watchlist</text>
-    <button id="stock-aapl" class="stock-item">AAPL - Apple Inc.</button>
-    <button id="stock-googl" class="stock-item">GOOGL - Alphabet</button>
-    <button id="stock-msft" class="stock-item">MSFT - Microsoft</button>
-    <button id="stock-tsla" class="stock-item">TSLA - Tesla Inc.</button>
+    <text class="eyebrow">TradeSphere AI</text>
+    <text class="header">Market Watchlist</text>
+    <text class="subtext">Tap a stock to load the live-style demo chart and AI insight feed.</text>
+
+    <button id="stock-aapl" class="stock-item">AAPL  Apple Inc.  $189.45  +1.25%</button>
+    <button id="stock-googl" class="stock-item">GOOGL  Alphabet  $142.80  -0.45%</button>
+    <button id="stock-msft" class="stock-item">MSFT  Microsoft  $402.10  +2.10%</button>
+    <button id="stock-tsla" class="stock-item">TSLA  Tesla Inc.  $175.30  -1.80%</button>
+
+    <div class="footer-card">
+      <text class="footer-label">Session Pulse</text>
+      <text id="market-status" class="footer-value">US Tech Leaders mixed, AI names outperforming.</text>
+    </div>
   </div>
   <style>
     .panel {
       flex-direction: column;
-      padding: 24px;
-      background-color: #1a1a1a;
+      padding: 28px;
+      background-color: rgba(7, 20, 45, 0.94);
       width: 100%;
       height: 100%;
-      border-radius: 16px;
-      border: 2px solid #333;
+      border-radius: 26px;
+      border: 1px solid rgba(110, 180, 255, 0.28);
+    }
+    .eyebrow {
+      font-size: 16px;
+      color: #7fc8ff;
+      margin-bottom: 10px;
     }
     .header {
-      font-size: 32px;
+      font-size: 34px;
       color: #ffffff;
-      margin-bottom: 24px;
+      margin-bottom: 10px;
+    }
+    .subtext {
+      font-size: 17px;
+      color: rgba(220, 238, 255, 0.72);
+      margin-bottom: 20px;
     }
     .stock-item {
       margin: 8px 0;
-      padding: 16px;
-      background-color: #333333;
-      border-radius: 8px;
-      color: #eeeeee;
-      font-size: 20px;
+      padding: 18px;
+      background-color: rgba(18, 46, 89, 0.95);
+      border-radius: 16px;
+      color: #eaf6ff;
+      font-size: 19px;
+      border: 1px solid rgba(123, 190, 255, 0.22);
+    }
+    .footer-card {
+      margin-top: auto;
+      padding: 18px;
+      background-color: rgba(10, 35, 73, 0.9);
+      border-radius: 18px;
+      border: 1px solid rgba(123, 190, 255, 0.16);
+    }
+    .footer-label {
+      font-size: 15px;
+      color: rgba(143, 203, 255, 0.85);
+      margin-bottom: 8px;
+    }
+    .footer-value {
+      font-size: 18px;
+      color: #f4fbff;
     }
   </style>
 </uikit>

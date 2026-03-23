@@ -8,7 +8,6 @@ import {
 import {
   Interactable,
   PanelUI,
-  ScreenSpace
 } from '@iwsdk/core';
 
 
@@ -75,9 +74,6 @@ World.create(document.getElementById('scene-container'), {
       maxWidth: 1.2,
       maxHeight: 0.8,
       density: 2000
-    })
-    .addComponent(ScreenSpace, { // For debugging in 2D
-      top: '10px', left: '10px', height: '40%'
     });
   centerPanel.object3D.position.set(0, 1.3, -1.8);
 

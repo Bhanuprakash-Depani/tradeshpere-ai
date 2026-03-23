@@ -1,40 +1,106 @@
 <uikit>
   <div class="panel">
+    <text class="eyebrow">Decision Engine</text>
     <text class="header">AI Insights</text>
-    <text id="insight-text" class="content">Select a stock to generate insights.</text>
-    
-    <text class="sub-header">Recommendation</text>
-    <text id="rec-text" class="rec">--</text>
+    <text id="insight-text" class="content">Apple is holding above short-term support while momentum stays constructive.</text>
+
+    <div class="metric-card">
+      <text class="metric-label">Recommendation</text>
+      <text id="rec-text" class="rec">BUY</text>
+      <text id="confidence" class="confidence">Confidence 78%</text>
+    </div>
+
+    <div class="metric-card">
+      <text class="metric-label">Why It Matters</text>
+      <text id="insight-points" class="point-text">AI demand, improving revenue mix, and steady intraday volume support the move.</text>
+    </div>
 
     <div class="chat-container">
-        <text class="chat-title">TradeSphere Bot</text>
-        <button id="voice-btn" class="mic-btn">Microphone / Chat</button>
-        <text id="chat-response" class="chat-text">"How is the market today?"</text>
+        <text class="chat-title">Voice + Chat Demo</text>
+        <button id="voice-btn" class="mic-btn">Ask TradeSphere Bot</button>
+        <text id="chat-prompt" class="chat-prompt">Prompt: "Should I buy this breakout?"</text>
+        <text id="chat-response" class="chat-text">AI: Momentum is positive, but wait for a clean hold above support.</text>
     </div>
   </div>
   <style>
     .panel {
       flex-direction: column;
-      padding: 24px;
-      background-color: #1a1a1a;
+      padding: 28px;
+      background-color: rgba(7, 20, 45, 0.94);
       width: 100%;
       height: 100%;
-      border-radius: 16px;
-      border: 2px solid #333;
+      border-radius: 26px;
+      border: 1px solid rgba(110, 180, 255, 0.28);
     }
-    .header { font-size: 28px; color: #4a90e2; margin-bottom: 12px; }
-    .sub-header { font-size: 20px; color: #888; margin-top: 16px; }
-    .content { font-size: 18px; color: #eee; margin-bottom: 10px; }
-    .rec { font-size: 36px; color: white; font-weight: bold; margin-bottom: 30px; }
-    
+    .eyebrow {
+      font-size: 16px;
+      color: #7fc8ff;
+      margin-bottom: 10px;
+    }
+    .header {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .content {
+      font-size: 18px;
+      color: #eef7ff;
+      margin-bottom: 16px;
+    }
+    .metric-card {
+      padding: 18px;
+      background-color: rgba(10, 35, 73, 0.9);
+      border-radius: 18px;
+      border: 1px solid rgba(123, 190, 255, 0.16);
+      margin-bottom: 14px;
+    }
+    .metric-label {
+      font-size: 15px;
+      color: rgba(143, 203, 255, 0.82);
+      margin-bottom: 8px;
+    }
+    .rec {
+      font-size: 34px;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .confidence {
+      font-size: 16px;
+      color: rgba(223, 241, 255, 0.74);
+    }
+    .point-text {
+      font-size: 17px;
+      color: #f4fbff;
+    }
     .chat-container {
-        margin-top: auto;
-        background-color: #2a2a2a;
-        padding: 16px;
-        border-radius: 12px;
+      margin-top: auto;
+      background-color: rgba(6, 29, 62, 0.92);
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(123, 190, 255, 0.18);
     }
-    .chat-title { font-size: 16px; color: #666; margin-bottom: 8px; }
-    .mic-btn { background-color: #444; padding: 12px; border-radius: 20px; color: white; margin-bottom: 12px; }
-    .chat-text { font-size: 16px; color: #aaa; font-style: italic; }
+    .chat-title {
+      font-size: 17px;
+      color: #d9eeff;
+      margin-bottom: 10px;
+    }
+    .mic-btn {
+      background-color: rgba(37, 95, 176, 0.95);
+      padding: 14px;
+      border-radius: 20px;
+      color: white;
+      margin-bottom: 12px;
+      border: 1px solid rgba(171, 220, 255, 0.18);
+    }
+    .chat-prompt {
+      font-size: 15px;
+      color: rgba(216, 237, 255, 0.72);
+      margin-bottom: 10px;
+    }
+    .chat-text {
+      font-size: 16px;
+      color: #f4fbff;
+      font-style: italic;
+    }
   </style>
 </uikit>
