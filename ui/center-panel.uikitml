@@ -1,67 +1,66 @@
 <uikit>
   <div class="panel">
-    <div class="title-row">
-      <div class="title-block">
-        <text class="eyebrow">TradeSphere AI</text>
-        <text id="stock-title" class="header">Apple Inc.</text>
-      </div>
-      <div class="trend-chip">
-        <text id="trend-label" class="trend-text">Bullish Intraday</text>
-      </div>
-    </div>
+    <text class="eyebrow">TradeSphere AI</text>
+    <text id="stock-title" class="header">Apple Inc.</text>
 
     <div class="hero-row">
       <text id="price" class="price">$189.45</text>
       <text id="change" class="change">+1.25%</text>
-      <text id="range" class="meta">Range 186.90 - 191.10</text>
-      <text id="volume" class="meta">Vol 68.4M</text>
+    </div>
+
+    <div class="meta-row">
+      <text id="trend-label" class="meta-pill">Bullish Intraday</text>
+      <text id="range" class="meta-pill">Range 186.90 - 191.10</text>
+      <text id="volume" class="meta-pill">Vol 68.4M</text>
     </div>
 
     <div class="graph-panel">
-      <div class="graph-header">
-        <text class="graph-title">Intraday Candles</text>
-        <text class="graph-subtitle">Demo market stream for selected stock</text>
-      </div>
+      <text class="graph-title">Intraday Candles</text>
 
       <div class="chart-area">
-        <div class="chart-column">
-          <div id="wick-0" class="wick"></div>
-          <div id="body-0" class="body"></div>
+        <div class="chart-bars">
+          <div class="chart-column">
+            <div id="wick-0" class="wick"></div>
+            <div id="body-0" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-1" class="wick"></div>
+            <div id="body-1" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-2" class="wick"></div>
+            <div id="body-2" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-3" class="wick"></div>
+            <div id="body-3" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-4" class="wick"></div>
+            <div id="body-4" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-5" class="wick"></div>
+            <div id="body-5" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-6" class="wick"></div>
+            <div id="body-6" class="body"></div>
+          </div>
+          <div class="chart-column">
+            <div id="wick-7" class="wick"></div>
+            <div id="body-7" class="body"></div>
+          </div>
+        </div>
+
+        <div class="labels-row">
           <text id="label-0" class="axis-label">09:30</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-1" class="wick"></div>
-          <div id="body-1" class="body"></div>
           <text id="label-1" class="axis-label">10:00</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-2" class="wick"></div>
-          <div id="body-2" class="body"></div>
           <text id="label-2" class="axis-label">10:30</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-3" class="wick"></div>
-          <div id="body-3" class="body"></div>
           <text id="label-3" class="axis-label">11:00</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-4" class="wick"></div>
-          <div id="body-4" class="body"></div>
           <text id="label-4" class="axis-label">11:30</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-5" class="wick"></div>
-          <div id="body-5" class="body"></div>
           <text id="label-5" class="axis-label">12:00</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-6" class="wick"></div>
-          <div id="body-6" class="body"></div>
           <text id="label-6" class="axis-label">12:30</text>
-        </div>
-        <div class="chart-column">
-          <div id="wick-7" class="wick"></div>
-          <div id="body-7" class="body"></div>
           <text id="label-7" class="axis-label">13:00</text>
         </div>
       </div>
@@ -85,21 +84,12 @@
   <style>
     .panel {
       flex-direction: column;
-      padding: 30px;
+      padding: 24px;
       background-color: rgba(5, 24, 56, 0.96);
       width: 100%;
       height: 100%;
       border-radius: 28px;
       border: 1px solid rgba(110, 180, 255, 0.28);
-    }
-    .title-row {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 14px;
-    }
-    .title-block {
-      flex-direction: column;
     }
     .eyebrow {
       font-size: 16px;
@@ -107,70 +97,66 @@
       margin-bottom: 8px;
     }
     .header {
-      font-size: 42px;
+      font-size: 36px;
       color: white;
-    }
-    .trend-chip {
-      padding: 12px 18px;
-      background-color: rgba(33, 82, 156, 0.85);
-      border-radius: 999px;
-      border: 1px solid rgba(151, 210, 255, 0.25);
-    }
-    .trend-text {
-      font-size: 16px;
-      color: #d8efff;
+      margin-bottom: 12px;
     }
     .hero-row {
       flex-direction: row;
-      align-items: end;
-      gap: 16px;
-      margin-bottom: 18px;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 12px;
     }
     .price {
-      font-size: 44px;
+      font-size: 40px;
       color: #ffffff;
+      margin-right: 16px;
     }
     .change {
-      font-size: 26px;
+      font-size: 24px;
       color: #63d28f;
     }
-    .meta {
-      font-size: 17px;
-      color: rgba(216, 237, 255, 0.72);
+    .meta-row {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 16px;
+    }
+    .meta-pill {
+      font-size: 15px;
+      color: rgba(216, 237, 255, 0.85);
+      background-color: rgba(17, 53, 104, 0.88);
+      border-radius: 999px;
+      padding: 10px 14px;
+      margin-right: 10px;
     }
     .graph-panel {
-      flex-grow: 1;
-      padding: 20px;
+      padding: 18px;
       background-color: rgba(9, 35, 76, 0.9);
       border-radius: 22px;
       border: 1px solid rgba(123, 190, 255, 0.18);
       margin-bottom: 18px;
     }
-    .graph-header {
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 18px;
-    }
     .graph-title {
       font-size: 22px;
       color: #f4fbff;
-    }
-    .graph-subtitle {
-      font-size: 16px;
-      color: rgba(216, 237, 255, 0.62);
+      margin-bottom: 14px;
     }
     .chart-area {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: end;
-      flex-grow: 1;
-      padding: 12px 6px 4px;
+      flex-direction: column;
+      padding: 16px 12px 10px;
       background-color: rgba(4, 18, 40, 0.55);
       border-radius: 18px;
     }
+    .chart-bars {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+      height: 180px;
+      margin-bottom: 10px;
+    }
     .chart-column {
-      width: 10%;
-      height: 100%;
+      width: 54px;
+      height: 180px;
       flex-direction: column;
       justify-content: end;
       align-items: center;
@@ -189,21 +175,26 @@
       border-radius: 8px;
       margin-bottom: 10px;
     }
+    .labels-row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .axis-label {
       font-size: 14px;
       color: rgba(216, 237, 255, 0.68);
+      width: 54px;
+      text-align: center;
     }
     .stats-row {
       flex-direction: row;
       justify-content: space-between;
-      gap: 14px;
     }
     .stat-card {
-      flex-grow: 1;
       padding: 14px 16px;
       background-color: rgba(10, 35, 73, 0.9);
       border-radius: 18px;
       border: 1px solid rgba(123, 190, 255, 0.14);
+      width: 31%;
     }
     .stat-label {
       font-size: 15px;

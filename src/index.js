@@ -71,11 +71,12 @@ World.create(document.getElementById('scene-container'), {
     .addComponent(Interactable)
     .addComponent(PanelUI, {
       config: './ui/center-panel.json',
-      maxWidth: 1.2,
-      maxHeight: 0.8,
+      maxWidth: 1.25,
+      maxHeight: 0.9,
       density: 2000
     });
-  centerPanel.object3D.position.set(0, 1.3, -1.8);
+  centerPanel.object3D.position.set(0, 1.55, -1.15);
+  centerPanel.object3D.lookAt(camera.position);
 
   // Right Panel: AI Insights
   const rightPanel = world
