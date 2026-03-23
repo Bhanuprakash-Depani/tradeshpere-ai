@@ -1,0 +1,403 @@
+{
+  "element": {
+    "sourceTag": "uikit",
+    "type": "custom",
+    "children": [
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "text",
+            "type": "custom",
+            "children": [
+              "TradeSphere AI"
+            ],
+            "properties": {
+              "class": "eyebrow"
+            },
+            "dataUid": "uid-3"
+          },
+          {
+            "sourceTag": "text",
+            "type": "custom",
+            "children": [
+              "Market Watchlist"
+            ],
+            "properties": {
+              "class": "header"
+            },
+            "dataUid": "uid-4"
+          },
+          {
+            "sourceTag": "text",
+            "type": "custom",
+            "children": [
+              "Tap a stock to load the live-style demo chart and AI insight feed."
+            ],
+            "properties": {
+              "class": "subtext"
+            },
+            "dataUid": "uid-5"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "AAPL  Apple Inc.  $189.45  +1.25%"
+            ],
+            "properties": {
+              "id": "stock-aapl",
+              "class": "stock-item"
+            },
+            "dataUid": "uid-6"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "GOOGL  Alphabet  $142.80  -0.45%"
+            ],
+            "properties": {
+              "id": "stock-googl",
+              "class": "stock-item"
+            },
+            "dataUid": "uid-7"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "MSFT  Microsoft  $402.10  +2.10%"
+            ],
+            "properties": {
+              "id": "stock-msft",
+              "class": "stock-item"
+            },
+            "dataUid": "uid-8"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "TSLA  Tesla Inc.  $175.30  -1.80%"
+            ],
+            "properties": {
+              "id": "stock-tsla",
+              "class": "stock-item"
+            },
+            "dataUid": "uid-9"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "sourceTag": "text",
+                "type": "custom",
+                "children": [
+                  "Session Pulse"
+                ],
+                "properties": {
+                  "class": "footer-label"
+                },
+                "dataUid": "uid-11"
+              },
+              {
+                "sourceTag": "text",
+                "type": "custom",
+                "children": [
+                  "US Tech Leaders mixed, AI names outperforming."
+                ],
+                "properties": {
+                  "id": "market-status",
+                  "class": "footer-value"
+                },
+                "dataUid": "uid-12"
+              }
+            ],
+            "properties": {
+              "class": "footer-card"
+            },
+            "dataUid": "uid-10"
+          }
+        ],
+        "properties": {
+          "class": "panel"
+        },
+        "dataUid": "uid-2"
+      }
+    ],
+    "properties": {},
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "panel": {
+      "content": {
+        "flexDirection": "column",
+        "padding": "28px",
+        "backgroundColor": "rgba(7, 20, 45, 0.94)",
+        "width": "100%",
+        "height": "100%",
+        "borderRadius": 26,
+        "border": "1px solid rgba(110, 180, 255, 0.28)"
+      }
+    },
+    "eyebrow": {
+      "content": {
+        "fontSize": "16px",
+        "color": "#7fc8ff",
+        "marginBottom": "10px"
+      }
+    },
+    "header": {
+      "content": {
+        "fontSize": "34px",
+        "color": "#ffffff",
+        "marginBottom": "10px"
+      }
+    },
+    "subtext": {
+      "content": {
+        "fontSize": "17px",
+        "color": "rgba(220, 238, 255, 0.72)",
+        "marginBottom": "20px"
+      }
+    },
+    "stock-item": {
+      "content": {
+        "margin": "8px 0",
+        "padding": "18px",
+        "backgroundColor": "rgba(18, 46, 89, 0.95)",
+        "borderRadius": 16,
+        "color": "#eaf6ff",
+        "fontSize": "19px",
+        "border": "1px solid rgba(123, 190, 255, 0.22)"
+      }
+    },
+    "footer-card": {
+      "content": {
+        "marginTop": "auto",
+        "padding": "18px",
+        "backgroundColor": "rgba(10, 35, 73, 0.9)",
+        "borderRadius": 18,
+        "border": "1px solid rgba(123, 190, 255, 0.16)"
+      }
+    },
+    "footer-label": {
+      "content": {
+        "fontSize": "15px",
+        "color": "rgba(143, 203, 255, 0.85)",
+        "marginBottom": "8px"
+      }
+    },
+    "footer-value": {
+      "content": {
+        "fontSize": "18px",
+        "color": "#f4fbff"
+      }
+    }
+  },
+  "ranges": {
+    "uid-1": {
+      "start": {
+        "line": 0,
+        "column": 0
+      },
+      "end": {
+        "line": 67,
+        "column": 8
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 1,
+        "column": 2
+      },
+      "end": {
+        "line": 15,
+        "column": 8
+      }
+    },
+    "uid-3": {
+      "start": {
+        "line": 2,
+        "column": 4
+      },
+      "end": {
+        "line": 2,
+        "column": 47
+      }
+    },
+    "uid-4": {
+      "start": {
+        "line": 3,
+        "column": 4
+      },
+      "end": {
+        "line": 3,
+        "column": 48
+      }
+    },
+    "uid-5": {
+      "start": {
+        "line": 4,
+        "column": 4
+      },
+      "end": {
+        "line": 4,
+        "column": 99
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 6,
+        "column": 4
+      },
+      "end": {
+        "line": 6,
+        "column": 89
+      }
+    },
+    "uid-7": {
+      "start": {
+        "line": 7,
+        "column": 4
+      },
+      "end": {
+        "line": 7,
+        "column": 89
+      }
+    },
+    "uid-8": {
+      "start": {
+        "line": 8,
+        "column": 4
+      },
+      "end": {
+        "line": 8,
+        "column": 88
+      }
+    },
+    "uid-9": {
+      "start": {
+        "line": 9,
+        "column": 4
+      },
+      "end": {
+        "line": 9,
+        "column": 89
+      }
+    },
+    "uid-10": {
+      "start": {
+        "line": 11,
+        "column": 4
+      },
+      "end": {
+        "line": 14,
+        "column": 10
+      }
+    },
+    "uid-11": {
+      "start": {
+        "line": 12,
+        "column": 6
+      },
+      "end": {
+        "line": 12,
+        "column": 53
+      }
+    },
+    "uid-12": {
+      "start": {
+        "line": 13,
+        "column": 6
+      },
+      "end": {
+        "line": 13,
+        "column": 105
+      }
+    },
+    "panel": {
+      "start": {
+        "line": 17,
+        "column": 4
+      },
+      "end": {
+        "line": 17,
+        "column": 10
+      }
+    },
+    "eyebrow": {
+      "start": {
+        "line": 26,
+        "column": 4
+      },
+      "end": {
+        "line": 26,
+        "column": 12
+      }
+    },
+    "header": {
+      "start": {
+        "line": 31,
+        "column": 4
+      },
+      "end": {
+        "line": 31,
+        "column": 11
+      }
+    },
+    "subtext": {
+      "start": {
+        "line": 36,
+        "column": 4
+      },
+      "end": {
+        "line": 36,
+        "column": 12
+      }
+    },
+    "stock-item": {
+      "start": {
+        "line": 41,
+        "column": 4
+      },
+      "end": {
+        "line": 41,
+        "column": 15
+      }
+    },
+    "footer-card": {
+      "start": {
+        "line": 50,
+        "column": 4
+      },
+      "end": {
+        "line": 50,
+        "column": 16
+      }
+    },
+    "footer-label": {
+      "start": {
+        "line": 57,
+        "column": 4
+      },
+      "end": {
+        "line": 57,
+        "column": 17
+      }
+    },
+    "footer-value": {
+      "start": {
+        "line": 62,
+        "column": 4
+      },
+      "end": {
+        "line": 62,
+        "column": 17
+      }
+    }
+  }
+}
