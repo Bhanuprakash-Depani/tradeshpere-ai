@@ -4,8 +4,11 @@
     <text class="header">AI Insights</text>
     <text id="insight-text" class="content">Apple is holding above short-term support while momentum stays constructive.</text>
 
-    <div class="metric-card">
-      <text class="metric-label">Recommendation</text>
+    <div class="metric-card rec-card">
+      <div class="card-row">
+        <text class="metric-label">Recommendation</text>
+        <text class="card-chip">AI Score</text>
+      </div>
       <text id="rec-text" class="rec">BUY</text>
       <text id="confidence" class="confidence">Confidence 78%</text>
     </div>
@@ -16,91 +19,109 @@
     </div>
 
     <div class="chat-container">
-        <text class="chat-title">Voice + Chat Demo</text>
-        <button id="voice-btn" class="mic-btn">Ask TradeSphere Bot</button>
-        <text id="chat-prompt" class="chat-prompt">Prompt: "Should I buy this breakout?"</text>
-        <text id="chat-response" class="chat-text">AI: Momentum is positive, but wait for a clean hold above support.</text>
+      <text class="chat-title">Voice + Chat Demo</text>
+      <button id="voice-btn" class="mic-btn">Ask TradeSphere Bot</button>
+      <text id="chat-prompt" class="chat-prompt">Prompt: "Should I buy this breakout?"</text>
+      <text id="chat-response" class="chat-text">AI: Momentum is positive, but wait for a clean hold above support.</text>
     </div>
   </div>
   <style>
     .panel {
       flex-direction: column;
-      padding: 28px;
-      background-color: rgba(7, 20, 45, 0.94);
+      padding: 32px;
+      background-color: #061a3d;
       width: 100%;
       height: 100%;
-      border-radius: 26px;
-      border: 1px solid rgba(110, 180, 255, 0.28);
+      border-radius: 28px;
+      border: 2px solid #295d9c;
     }
     .eyebrow {
       font-size: 16px;
-      color: #7fc8ff;
+      color: #88d0ff;
       margin-bottom: 10px;
     }
     .header {
-      font-size: 32px;
+      font-size: 34px;
       color: #ffffff;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .content {
-      font-size: 18px;
+      font-size: 19px;
       color: #eef7ff;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      line-height: 1.35;
     }
     .metric-card {
-      padding: 18px;
-      background-color: rgba(10, 35, 73, 0.9);
-      border-radius: 18px;
-      border: 1px solid rgba(123, 190, 255, 0.16);
-      margin-bottom: 14px;
+      padding: 20px;
+      background-color: #0a2a56;
+      border-radius: 20px;
+      border: 1px solid #1f4f84;
+      margin-bottom: 16px;
+    }
+    .rec-card {
+      background-color: #0c315f;
+    }
+    .card-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
     }
     .metric-label {
       font-size: 15px;
-      color: rgba(143, 203, 255, 0.82);
-      margin-bottom: 8px;
+      color: #8fcfff;
+    }
+    .card-chip {
+      font-size: 13px;
+      color: #082446;
+      background-color: #99d6ff;
+      border-radius: 999px;
+      padding: 8px 12px;
     }
     .rec {
-      font-size: 34px;
-      color: white;
-      margin-bottom: 8px;
+      font-size: 36px;
+      color: #ffffff;
+      margin-bottom: 10px;
     }
     .confidence {
       font-size: 16px;
-      color: rgba(223, 241, 255, 0.74);
+      color: #c7def4;
     }
     .point-text {
       font-size: 17px;
       color: #f4fbff;
+      line-height: 1.35;
     }
     .chat-container {
       margin-top: auto;
-      background-color: rgba(6, 29, 62, 0.92);
-      padding: 18px;
-      border-radius: 18px;
-      border: 1px solid rgba(123, 190, 255, 0.18);
+      background-color: #08254a;
+      padding: 22px;
+      border-radius: 20px;
+      border: 1px solid #1f4f84;
     }
     .chat-title {
       font-size: 17px;
       color: #d9eeff;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
     .mic-btn {
-      background-color: rgba(37, 95, 176, 0.95);
-      padding: 14px;
-      border-radius: 20px;
-      color: white;
-      margin-bottom: 12px;
-      border: 1px solid rgba(171, 220, 255, 0.18);
+      background-color: #1d5ab0;
+      padding: 16px;
+      border-radius: 18px;
+      color: #ffffff;
+      margin-bottom: 16px;
+      border: 1px solid #b2ddff;
     }
     .chat-prompt {
       font-size: 15px;
-      color: rgba(216, 237, 255, 0.72);
-      margin-bottom: 10px;
+      color: #bfd7f3;
+      margin-bottom: 12px;
     }
     .chat-text {
       font-size: 16px;
       color: #f4fbff;
       font-style: italic;
+      line-height: 1.35;
     }
   </style>
 </uikit>

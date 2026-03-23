@@ -2,7 +2,12 @@
   <div class="panel">
     <text class="eyebrow">TradeSphere AI</text>
     <text class="header">Market Watchlist</text>
-    <text class="subtext">Tap a stock to load the live-style demo chart and AI insight feed.</text>
+    <text class="subtext">Scan momentum leaders, then tap a ticker to refresh the chart, AI insight stream, and trade actions.</text>
+
+    <div class="section-head">
+      <text class="section-title">Priority Movers</text>
+      <text class="section-tag">Live Demo</text>
+    </div>
 
     <button id="stock-aapl" class="stock-item">AAPL  Apple Inc.  $189.45  +1.25%</button>
     <button id="stock-googl" class="stock-item">GOOGL  Alphabet  $142.80  -0.45%</button>
@@ -17,52 +22,80 @@
   <style>
     .panel {
       flex-direction: column;
-      padding: 28px;
-      background-color: rgba(7, 20, 45, 0.94);
+      padding: 32px;
+      background-color: #061a3d;
       width: 100%;
       height: 100%;
-      border-radius: 26px;
-      border: 1px solid rgba(110, 180, 255, 0.28);
+      border-radius: 28px;
+      border: 2px solid #295d9c;
     }
     .eyebrow {
       font-size: 16px;
-      color: #7fc8ff;
+      color: #88d0ff;
       margin-bottom: 10px;
     }
     .header {
-      font-size: 34px;
+      font-size: 35px;
       color: #ffffff;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .subtext {
+      font-size: 18px;
+      color: #bed6f3;
+      margin-bottom: 24px;
+      line-height: 1.35;
+    }
+    .section-head {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      background-color: #0d315f;
+      border-radius: 18px;
+      border: 1px solid #1f4f84;
+      margin-bottom: 14px;
+    }
+    .section-title {
       font-size: 17px;
-      color: rgba(220, 238, 255, 0.72);
-      margin-bottom: 20px;
+      color: #eff8ff;
+    }
+    .section-tag {
+      font-size: 13px;
+      color: #092548;
+      background-color: #93d5ff;
+      border-radius: 999px;
+      padding: 8px 12px;
     }
     .stock-item {
-      margin: 8px 0;
-      padding: 18px;
-      background-color: rgba(18, 46, 89, 0.95);
-      border-radius: 16px;
-      color: #eaf6ff;
-      font-size: 19px;
-      border: 1px solid rgba(123, 190, 255, 0.22);
+      margin-bottom: 12px;
+      padding: 20px;
+      background-color: #0e3363;
+      border-radius: 18px;
+      color: #eff8ff;
+      font-size: 20px;
+      border: 1px solid #24548d;
+    }
+    .stock-item:active {
+      background-color: #1c5db3;
+      border-color: #b6e0ff;
     }
     .footer-card {
       margin-top: auto;
-      padding: 18px;
-      background-color: rgba(10, 35, 73, 0.9);
-      border-radius: 18px;
-      border: 1px solid rgba(123, 190, 255, 0.16);
+      padding: 22px;
+      background-color: #0a2a56;
+      border-radius: 20px;
+      border: 1px solid #1f4f84;
     }
     .footer-label {
       font-size: 15px;
-      color: rgba(143, 203, 255, 0.85);
-      margin-bottom: 8px;
+      color: #8fcfff;
+      margin-bottom: 12px;
+      margin-right: 10px;
     }
     .footer-value {
       font-size: 18px;
       color: #f4fbff;
+      line-height: 1.35;
     }
   </style>
 </uikit>

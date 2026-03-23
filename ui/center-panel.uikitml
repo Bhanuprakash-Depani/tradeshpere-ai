@@ -1,209 +1,422 @@
 <uikit>
   <div class="panel">
-    <text class="eyebrow">TradeSphere AI</text>
-    <text id="stock-title" class="header">Apple Inc.</text>
-
-    <div class="hero-row">
-      <text id="price" class="price">$189.45</text>
-      <text id="change" class="change">+1.25%</text>
+    <div class="top-row">
+      <div class="title-block">
+        <text class="eyebrow">TradeSphere AI</text>
+        <text id="stock-title" class="header">Apple Inc.</text>
+      </div>
+      <text id="chart-signal" class="signal-badge">Bullish Session</text>
     </div>
 
-    <div class="meta-row">
-      <text id="trend-label" class="meta-pill">Bullish Intraday</text>
-      <text id="range" class="meta-pill">Range 186.90 - 191.10</text>
-      <text id="volume" class="meta-pill">Vol 68.4M</text>
-    </div>
-
-    <div class="graph-panel">
-      <text class="graph-title">Intraday Candles</text>
-
-      <div class="chart-area">
-        <div class="chart-bars">
-          <div class="chart-column">
-            <div id="wick-0" class="wick"></div>
-            <div id="body-0" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-1" class="wick"></div>
-            <div id="body-1" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-2" class="wick"></div>
-            <div id="body-2" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-3" class="wick"></div>
-            <div id="body-3" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-4" class="wick"></div>
-            <div id="body-4" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-5" class="wick"></div>
-            <div id="body-5" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-6" class="wick"></div>
-            <div id="body-6" class="body"></div>
-          </div>
-          <div class="chart-column">
-            <div id="wick-7" class="wick"></div>
-            <div id="body-7" class="body"></div>
-          </div>
+    <div class="hero-card">
+      <div class="hero-left">
+        <div class="hero-row">
+          <text id="price" class="price">$189.45</text>
+          <text id="change" class="change">+1.25%</text>
         </div>
-
-        <div class="labels-row">
-          <text id="label-0" class="axis-label">09:30</text>
-          <text id="label-1" class="axis-label">10:00</text>
-          <text id="label-2" class="axis-label">10:30</text>
-          <text id="label-3" class="axis-label">11:00</text>
-          <text id="label-4" class="axis-label">11:30</text>
-          <text id="label-5" class="axis-label">12:00</text>
-          <text id="label-6" class="axis-label">12:30</text>
-          <text id="label-7" class="axis-label">13:00</text>
+        <div class="pill-row">
+          <text id="trend-label" class="pill">Bullish Intraday</text>
+          <text id="range" class="pill">Range 186.90 - 191.10</text>
+          <text id="volume" class="pill">Vol 68.4M</text>
         </div>
       </div>
+      <div class="hero-side">
+        <text class="hero-side-label">Trade Bias</text>
+        <text id="signal" class="hero-side-value">Momentum Breakout</text>
+      </div>
     </div>
 
-    <div class="stats-row">
-      <div class="stat-card">
-        <text class="stat-label">Signal</text>
-        <text id="signal" class="stat-value">Momentum Breakout</text>
+    <div class="chart-card">
+      <div class="chart-title-row">
+        <text class="chart-header">Intraday Price Bars</text>
+        <text id="chart-high" class="chart-meta">High $191.10</text>
       </div>
-      <div class="stat-card">
-        <text class="stat-label">Bias</text>
-        <text id="bias" class="stat-value">Accumulation</text>
+
+      <div class="chart-shell">
+        <div class="price-axis">
+          <text id="axis-top" class="axis-price">$191.10</text>
+          <text id="axis-mid" class="axis-price">$189.00</text>
+          <text id="axis-low" class="axis-price">$186.90</text>
+        </div>
+
+        <div class="plot-stage">
+          <div class="grid-line grid-top"></div>
+          <div class="grid-line grid-mid"></div>
+          <div class="grid-line grid-low"></div>
+
+          <div class="candle-grid">
+            <div class="candle-column">
+              <div id="candle-top-0" class="bar-top-gap"></div>
+              <div id="body-0" class="price-bar"></div>
+              <div id="candle-bottom-0" class="bar-bottom-gap"></div>
+              <text id="label-0" class="candle-label">09:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-1" class="bar-top-gap"></div>
+              <div id="body-1" class="price-bar"></div>
+              <div id="candle-bottom-1" class="bar-bottom-gap"></div>
+              <text id="label-1" class="candle-label">10:00</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-2" class="bar-top-gap"></div>
+              <div id="body-2" class="price-bar"></div>
+              <div id="candle-bottom-2" class="bar-bottom-gap"></div>
+              <text id="label-2" class="candle-label">10:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-3" class="bar-top-gap"></div>
+              <div id="body-3" class="price-bar"></div>
+              <div id="candle-bottom-3" class="bar-bottom-gap"></div>
+              <text id="label-3" class="candle-label">11:00</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-4" class="bar-top-gap"></div>
+              <div id="body-4" class="price-bar"></div>
+              <div id="candle-bottom-4" class="bar-bottom-gap"></div>
+              <text id="label-4" class="candle-label">11:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-5" class="bar-top-gap"></div>
+              <div id="body-5" class="price-bar"></div>
+              <div id="candle-bottom-5" class="bar-bottom-gap"></div>
+              <text id="label-5" class="candle-label">12:00</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-6" class="bar-top-gap"></div>
+              <div id="body-6" class="price-bar"></div>
+              <div id="candle-bottom-6" class="bar-bottom-gap"></div>
+              <text id="label-6" class="candle-label">12:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-7" class="bar-top-gap"></div>
+              <div id="body-7" class="price-bar"></div>
+              <div id="candle-bottom-7" class="bar-bottom-gap"></div>
+              <text id="label-7" class="candle-label">13:00</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-8" class="bar-top-gap"></div>
+              <div id="body-8" class="price-bar"></div>
+              <div id="candle-bottom-8" class="bar-bottom-gap"></div>
+              <text id="label-8" class="candle-label">13:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-9" class="bar-top-gap"></div>
+              <div id="body-9" class="price-bar"></div>
+              <div id="candle-bottom-9" class="bar-bottom-gap"></div>
+              <text id="label-9" class="candle-label">14:00</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-10" class="bar-top-gap"></div>
+              <div id="body-10" class="price-bar"></div>
+              <div id="candle-bottom-10" class="bar-bottom-gap"></div>
+              <text id="label-10" class="candle-label">14:30</text>
+            </div>
+            <div class="candle-column">
+              <div id="candle-top-11" class="bar-top-gap"></div>
+              <div id="body-11" class="price-bar"></div>
+              <div id="candle-bottom-11" class="bar-bottom-gap"></div>
+              <text id="label-11" class="candle-label">15:00</text>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="stat-card">
-        <text class="stat-label">Risk</text>
-        <text id="risk" class="stat-value">Medium</text>
+
+      <div class="chart-title-row chart-meta-row">
+        <text id="chart-low" class="chart-meta">Low $186.90</text>
+        <text id="chart-footnote" class="chart-footnote">Momentum is building through the afternoon session.</text>
+      </div>
+    </div>
+
+    <div class="trade-row">
+      <div class="stats-row">
+        <div class="stat-card">
+          <text class="stat-label">Signal</text>
+          <text id="center-signal" class="stat-value">Momentum Breakout</text>
+        </div>
+        <div class="stat-card">
+          <text class="stat-label">Bias</text>
+          <text id="bias" class="stat-value">Accumulation</text>
+        </div>
+        <div class="stat-card">
+          <text class="stat-label">Risk</text>
+          <text id="risk" class="stat-value">Medium</text>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <text class="action-label">Quick Trade</text>
+        <div class="action-buttons">
+          <button id="buy-btn" class="trade-btn buy-btn">BUY</button>
+          <button id="sell-btn" class="trade-btn sell-btn">SELL</button>
+        </div>
+        <text id="trade-status" class="trade-status">Tap BUY or SELL to simulate a demo trade ticket.</text>
       </div>
     </div>
   </div>
   <style>
     .panel {
       flex-direction: column;
-      padding: 24px;
-      background-color: rgba(5, 24, 56, 0.96);
+      padding: 30px;
+      background-color: #061a3d;
       width: 100%;
       height: 100%;
-      border-radius: 28px;
-      border: 1px solid rgba(110, 180, 255, 0.28);
+      border-radius: 30px;
+      border: 2px solid #3973b6;
+    }
+    .top-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 18px;
     }
     .eyebrow {
-      font-size: 16px;
-      color: #7fc8ff;
-      margin-bottom: 8px;
+      font-size: 18px;
+      color: #9bd8ff;
+      margin-bottom: 10px;
+      margin-right: 10px;
     }
     .header {
-      font-size: 36px;
-      color: white;
-      margin-bottom: 12px;
+      font-size: 42px;
+      color: #ffffff;
+    }
+    .signal-badge {
+      font-size: 15px;
+      color: #082446;
+      background-color: #9ad7ff;
+      border-radius: 999px;
+      padding: 10px 14px;
+    }
+    .hero-card {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px;
+      background-color: #0c2f5d;
+      border-radius: 24px;
+      border: 1px solid #285a93;
+      margin-bottom: 18px;
+    }
+    .hero-left {
+      flex-grow: 1;
     }
     .hero-row {
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
     .price {
-      font-size: 40px;
+      font-size: 42px;
       color: #ffffff;
-      margin-right: 16px;
+      margin-right: 18px;
     }
     .change {
       font-size: 24px;
       color: #63d28f;
     }
-    .meta-row {
+    .pill-row {
       flex-direction: row;
-      justify-content: flex-start;
-      margin-bottom: 16px;
     }
-    .meta-pill {
+    .pill {
       font-size: 15px;
-      color: rgba(216, 237, 255, 0.85);
-      background-color: rgba(17, 53, 104, 0.88);
+      color: #eaf6ff;
+      background-color: #154a8b;
       border-radius: 999px;
       padding: 10px 14px;
       margin-right: 10px;
     }
-    .graph-panel {
-      padding: 18px;
-      background-color: rgba(9, 35, 76, 0.9);
-      border-radius: 22px;
-      border: 1px solid rgba(123, 190, 255, 0.18);
+    .hero-side {
+      width: 180px;
+      padding: 16px 18px;
+      margin-left: 16px;
+      background-color: #08254a;
+      border-radius: 18px;
+      border: 1px solid #214f83;
+    }
+    .hero-side-label {
+      font-size: 14px;
+      color: #89cbff;
+      margin-bottom: 10px;
+    }
+    .hero-side-value {
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .chart-card {
+      flex-grow: 1;
+      padding: 22px;
+      background-color: #0c2f5d;
+      border-radius: 24px;
+      border: 1px solid #285a93;
       margin-bottom: 18px;
     }
-    .graph-title {
-      font-size: 22px;
-      color: #f4fbff;
+    .chart-title-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 14px;
     }
-    .chart-area {
-      flex-direction: column;
-      padding: 16px 12px 10px;
-      background-color: rgba(4, 18, 40, 0.55);
-      border-radius: 18px;
+    .chart-header {
+      font-size: 22px;
+      color: #f4fbff;
+      margin-right: 16px;
     }
-    .chart-bars {
+    .chart-meta {
+      font-size: 15px;
+      color: #d3e9fb;
+    }
+    .chart-shell {
       flex-direction: row;
+      margin-bottom: 14px;
+    }
+    .price-axis {
+      width: 74px;
+      height: 190px;
       justify-content: space-between;
-      align-items: end;
-      height: 180px;
-      margin-bottom: 10px;
+      align-items: flex-start;
+      padding-top: 6px;
+      padding-bottom: 28px;
+      margin-right: 12px;
     }
-    .chart-column {
-      width: 54px;
-      height: 180px;
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-    }
-    .wick {
-      width: 6px;
-      height: 88px;
-      background-color: #63d28f;
-      border-radius: 999px;
-      margin-bottom: 6px;
-    }
-    .body {
-      width: 24px;
-      height: 34px;
-      background-color: #63d28f;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .labels-row {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .axis-label {
+    .axis-price {
       font-size: 14px;
-      color: rgba(216, 237, 255, 0.68);
-      width: 54px;
+      color: #c1dbf8;
+    }
+    .plot-stage {
+      flex-grow: 1;
+      height: 190px;
+      padding: 12px 12px 0;
+      background-color: #072245;
+      border-radius: 20px;
+    }
+    .grid-line {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+      background-color: #325e92;
+    }
+    .grid-top {
+      top: 20px;
+    }
+    .grid-mid {
+      top: 78px;
+    }
+    .grid-low {
+      top: 136px;
+    }
+    .candle-grid {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 168px;
+    }
+    .candle-column {
+      width: 24px;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    .bar-top-gap {
+      width: 100%;
+      height: 20px;
+    }
+    .price-bar {
+      width: 16px;
+      height: 56px;
+      background-color: #63d28f;
+      border-radius: 8px 8px 2px 2px;
+      border: 1px solid #d8f7e3;
+    }
+    .bar-bottom-gap {
+      width: 100%;
+      height: 10px;
+    }
+    .candle-label {
+      font-size: 11px;
+      color: #b6d2ef;
       text-align: center;
+      margin-top: 6px;
+    }
+    .chart-meta-row {
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .chart-footnote {
+      flex-grow: 1;
+      font-size: 16px;
+      color: #dcefff;
+      line-height: 1.35;
+      margin-left: 16px;
+    }
+    .trade-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
     }
     .stats-row {
+      width: 61%;
       flex-direction: row;
       justify-content: space-between;
     }
     .stat-card {
-      padding: 14px 16px;
-      background-color: rgba(10, 35, 73, 0.9);
-      border-radius: 18px;
-      border: 1px solid rgba(123, 190, 255, 0.14);
       width: 31%;
+      padding: 10px;
+      background-color: #0a2a56;
+      border-radius: 20px;
+      border: 1px solid #1f4f84;
     }
     .stat-label {
       font-size: 15px;
-      color: rgba(143, 203, 255, 0.82);
-      margin-bottom: 8px;
+      color: #8fcfff;
+      margin-bottom: 14px;
+      margin-right: 10px;
     }
     .stat-value {
-      font-size: 22px;
+      font-size: 21px;
       color: #ffffff;
+      line-height: 1.3;
+    }
+    .action-card {
+      width: 38%;
+      padding: 20px;
+      background-color: #08254a;
+      border-radius: 20px;
+      border: 1px solid #1f4f84;
+      margin-left: 20px;
+    }
+    .action-label {
+      font-size: 15px;
+      color: #8fcfff;
+      margin-bottom: 16px;
+    }
+    .action-buttons {
+      flex-direction: row;
+      margin-left: 8px;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .trade-btn {
+      width: 40%;
+      padding: 16px;
+      border-radius: 18px;
+      color: #ffffff;
+      font-size: 14px;
+      border: 1px solid #a4d4ff;
+    }
+    .buy-btn {
+      background-color: #1f8b57;
+    }
+    .sell-btn {
+      background-color: #b4454c;
+    }
+    .trade-status {
+      font-size: 15px;
+      color: #d4e9fb;
+      line-height: 1.35;
+      padding-top: 2px;
     }
   </style>
 </uikit>

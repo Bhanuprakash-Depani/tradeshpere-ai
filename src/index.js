@@ -13,13 +13,23 @@ import {
 
 import { EnvironmentType, LocomotionEnvironment } from '@iwsdk/core';
 
-import { TradeSphereSystem } from './tradesphere.js';
+import { TradeSphereSystem, TrendMascot } from './tradesphere.js';
 
 const assets = {
   environmentDesk: {
     url: './gltf/environmentDesk/environmentDesk.gltf',
     type: AssetType.GLTF,
     priority: 'critical'
+  },
+  bull: {
+    url: './gltf/bull/bull.gltf', // Placeholder path
+    type: AssetType.GLTF,
+    priority: 'background'
+  },
+  bear: {
+    url: './gltf/bear/bear.gltf', // Placeholder path
+    type: AssetType.GLTF,
+    priority: 'background'
   }
 };
 
@@ -36,8 +46,7 @@ World.create(document.getElementById('scene-container'), {
   const { camera } = world;
   
   
-  camera.position.set(-4, 1.5, -6);
-  camera.rotateY(-Math.PI * 0.75);
+  camera.position.set(0, 1.6, 1.5);
   
 
   
@@ -58,12 +67,12 @@ World.create(document.getElementById('scene-container'), {
     .addComponent(Interactable)
     .addComponent(PanelUI, {
       config: './ui/left-panel.json',
-      maxWidth: 0.8,
-      maxHeight: 1.0,
-      density: 2000
+      maxWidth: 0.9,
+      maxHeight: 1.06,
+      density: 3200
     });
-  leftPanel.object3D.position.set(-1.2, 1.3, -1.5);
-  leftPanel.object3D.rotation.y = Math.PI / 6; // Angle towards user
+  leftPanel.object3D.position.set(-1.48, 1.6, -1.16);
+  leftPanel.object3D.lookAt(camera.position);
 
   // Center Panel: Graph
   const centerPanel = world
@@ -71,11 +80,11 @@ World.create(document.getElementById('scene-container'), {
     .addComponent(Interactable)
     .addComponent(PanelUI, {
       config: './ui/center-panel.json',
-      maxWidth: 1.25,
-      maxHeight: 0.9,
-      density: 2000
+      maxWidth: 1.46,
+      maxHeight: 0.96,
+      density: 3200
     });
-  centerPanel.object3D.position.set(0, 1.55, -1.15);
+  centerPanel.object3D.position.set(0, 1.72, -1.18);
   centerPanel.object3D.lookAt(camera.position);
 
   // Right Panel: AI Insights
@@ -84,12 +93,18 @@ World.create(document.getElementById('scene-container'), {
     .addComponent(Interactable)
     .addComponent(PanelUI, {
       config: './ui/right-panel.json',
-      maxWidth: 0.8,
-      maxHeight: 1.0,
-      density: 2000
+      maxWidth: 0.9,
+      maxHeight: 1.06,
+      density: 3200
     });
-  rightPanel.object3D.position.set(1.2, 1.3, -1.5);
-  rightPanel.object3D.rotation.y = -Math.PI / 6; // Angle towards user
+  rightPanel.object3D.position.set(1.48, 1.6, -1.16);
+  rightPanel.object3D.lookAt(camera.position);
+
+  // Trend Mascot Container
+  const mascot = world.createTransformEntity();
+  mascot.object3D.position.set(0, 0.9, -1.2); // Positioned on the desk
+  mascot.object3D.scale.setScalar(0.5);
+  mascot.addComponent(TrendMascot);
 
   world.registerSystem(TradeSphereSystem);
 });

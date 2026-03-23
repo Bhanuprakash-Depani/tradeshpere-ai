@@ -33,5 +33,5 @@ export default defineConfig({
     esbuildOptions: { target: 'esnext' }
   },
   publicDir: 'public',
-  base: '/tradesphere-ai/'
+  base: '/tradeshpere-ai/'
 });
