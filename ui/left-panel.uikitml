@@ -1,0 +1,33 @@
+<uikit>
+  <div class="panel">
+    <text class="header">Watchlist</text>
+    <button id="stock-aapl" class="stock-item">AAPL - Apple Inc.</button>
+    <button id="stock-googl" class="stock-item">GOOGL - Alphabet</button>
+    <button id="stock-msft" class="stock-item">MSFT - Microsoft</button>
+    <button id="stock-tsla" class="stock-item">TSLA - Tesla Inc.</button>
+  </div>
+  <style>
+    .panel {
+      flex-direction: column;
+      padding: 24px;
+      background-color: #1a1a1a;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      border: 2px solid #333;
+    }
+    .header {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    .stock-item {
+      margin: 8px 0;
+      padding: 16px;
+      background-color: #333333;
+      border-radius: 8px;
+      color: #eeeeee;
+      font-size: 20px;
+    }
+  </style>
+</uikit>

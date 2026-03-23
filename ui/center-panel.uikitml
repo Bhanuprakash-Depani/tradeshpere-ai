@@ -1,0 +1,37 @@
+<uikit>
+  <div class="panel">
+    <text id="stock-title" class="header">Select Stock</text>
+    
+    <div class="graph-placeholder">
+        <text class="graph-label">Candlestick Graph View</text>
+    </div>
+
+    <div class="stats-row">
+        <text id="price" class="stat">Price: --</text>
+        <text id="change" class="stat">Change: --</text>
+    </div>
+  </div>
+  <style>
+    .panel {
+      flex-direction: column;
+      padding: 32px;
+      background-color: #1a1a1a;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      border: 2px solid #333;
+    }
+    .header { font-size: 48px; color: white; margin-bottom: 20px; text-align: center; }
+    .graph-placeholder {
+        flex-grow: 1;
+        background-color: #252525;
+        margin: 20px 0;
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph-label { color: #555; font-size: 24px; }
+    .stats-row { flex-direction: row; justify-content: space-around; }
+    .stat { font-size: 32px; color: #ccc; }
+  </style>
+</uikit>

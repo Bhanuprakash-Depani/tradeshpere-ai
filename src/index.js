@@ -1,58 +1,24 @@
-
-
 import {
   AssetType,
-  Mesh,
-  MeshBasicMaterial,
-  PlaneGeometry,
   SessionMode,
-  SRGBColorSpace,
   AssetManager,
   World
 } from '@iwsdk/core';
 
 import {
-  AudioSource,
-  DistanceGrabbable,
-  MovementMode,
   Interactable,
   PanelUI,
-  PlaybackMode,
   ScreenSpace
 } from '@iwsdk/core';
 
 
 import { EnvironmentType, LocomotionEnvironment } from '@iwsdk/core';
 
-import { PanelSystem } from './panel.js';
-
-import { Robot } from './robot.js';
-
-import { RobotSystem } from './robot.js';
+import { TradeSphereSystem } from './tradesphere.js';
 
 const assets = {
-  chimeSound: {
-    url: '/audio/chime.mp3',
-    type: AssetType.Audio,
-    priority: 'background'
-  },
-  webxr: {
-    url: '/textures/webxr.png',
-    type: AssetType.Texture,
-    priority: 'critical'
-  },
   environmentDesk: {
     url: './gltf/environmentDesk/environmentDesk.gltf',
-    type: AssetType.GLTF,
-    priority: 'critical'
-  },
-  plantSansevieria: {
-    url: './gltf/plantSansevieria/plantSansevieria.gltf',
-    type: AssetType.GLTF,
-    priority: 'critical'
-  },
-  robot: {
-    url: './gltf/robot/robot.gltf',
     type: AssetType.GLTF,
     priority: 'critical'
   }
@@ -85,64 +51,48 @@ World.create(document.getElementById('scene-container'), {
     .addComponent(LocomotionEnvironment, { type: EnvironmentType.STATIC });
   
 
-  const { scene: plantMesh } = AssetManager.getGLTF('plantSansevieria');
-  
-  
-  plantMesh.position.set(1.2, 0.85, -1.8);
-  
-  world
-    .createTransformEntity(plantMesh)
-    .addComponent(Interactable)
-    .addComponent(DistanceGrabbable, {
-      movementMode: MovementMode.MoveFromTarget
-    });
+  // --- TradeSphere UI Setup ---
 
-  const { scene: robotMesh } = AssetManager.getGLTF('robot');
-  // defaults for AR
-  robotMesh.position.set(-1.2, 0.4, -1.8);
-  robotMesh.scale.setScalar(1);
-  
-  robotMesh.position.set(-1.2, 0.95, -1.8);
-  robotMesh.scale.setScalar(0.5);
-  
-  world
-    .createTransformEntity(robotMesh)
-    .addComponent(Interactable)
-    .addComponent(Robot)
-    .addComponent(AudioSource, {
-      src: './audio/chime.mp3',
-      maxInstances: 3,
-      playbackMode: PlaybackMode.FadeRestart
-    });
-
-  const panelEntity = world
+  // Left Panel: Watchlist
+  const leftPanel = world
     .createTransformEntity()
-    .addComponent(PanelUI, {
-      config: './ui/welcome.json',
-      maxHeight: 0.8,
-      maxWidth: 1.6
-    })
     .addComponent(Interactable)
-    .addComponent(ScreenSpace, {
-      top: '20px',
-      left: '20px',
-      height: '40%'
+    .addComponent(PanelUI, {
+      config: './ui/left-panel.json',
+      maxWidth: 0.8,
+      maxHeight: 1.0,
+      density: 2000
     });
-  panelEntity.object3D.position.set(0, 1.29, -1.9);
-  
+  leftPanel.object3D.position.set(-1.2, 1.3, -1.5);
+  leftPanel.object3D.rotation.y = Math.PI / 6; // Angle towards user
 
-  const webxrLogoTexture = AssetManager.getTexture('webxr');
-  webxrLogoTexture.colorSpace = SRGBColorSpace;
-  const logoBanner = new Mesh(
-    new PlaneGeometry(3.39, 0.96),
-    new MeshBasicMaterial({
-      map: webxrLogoTexture,
-      transparent: true
-    }),
-  );
-  world.createTransformEntity(logoBanner);
-  logoBanner.position.set(0, 1, 1.8);
-  logoBanner.rotateY(Math.PI);
+  // Center Panel: Graph
+  const centerPanel = world
+    .createTransformEntity()
+    .addComponent(Interactable)
+    .addComponent(PanelUI, {
+      config: './ui/center-panel.json',
+      maxWidth: 1.2,
+      maxHeight: 0.8,
+      density: 2000
+    })
+    .addComponent(ScreenSpace, { // For debugging in 2D
+      top: '10px', left: '10px', height: '40%'
+    });
+  centerPanel.object3D.position.set(0, 1.3, -1.8);
 
-  world.registerSystem(PanelSystem).registerSystem(RobotSystem);
+  // Right Panel: AI Insights
+  const rightPanel = world
+    .createTransformEntity()
+    .addComponent(Interactable)
+    .addComponent(PanelUI, {
+      config: './ui/right-panel.json',
+      maxWidth: 0.8,
+      maxHeight: 1.0,
+      density: 2000
+    });
+  rightPanel.object3D.position.set(1.2, 1.3, -1.5);
+  rightPanel.object3D.rotation.y = -Math.PI / 6; // Angle towards user
+
+  world.registerSystem(TradeSphereSystem);
 });
